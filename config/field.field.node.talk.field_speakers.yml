@@ -1,0 +1,26 @@
+uuid: a18ae815-a161-40e6-9800-a1f4adec5670
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_speakers
+    - node.type.speaker
+    - node.type.talk
+id: node.talk.field_speakers
+field_name: field_speakers
+entity_type: node
+bundle: talk
+label: Speakers
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      speaker: speaker
+    sort:
+      field: _none
+field_type: entity_reference

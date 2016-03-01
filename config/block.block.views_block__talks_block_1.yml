@@ -1,0 +1,32 @@
+uuid: 3be11489-04b8-4ad0-ba00-b478971168ab
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.talks
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__talks_block_1
+theme: bartik
+region: sidebar_second
+weight: -8
+provider: null
+plugin: 'views_block:talks-block_1'
+settings:
+  id: 'views_block:talks-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      speaker: speaker
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

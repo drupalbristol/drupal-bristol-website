@@ -1,0 +1,23 @@
+uuid: fea8f309-89ad-40c3-b717-235aeaf65756
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_drupalorg_url
+    - node.type.speaker
+  module:
+    - link
+id: node.speaker.field_drupalorg_url
+field_name: field_drupalorg_url
+entity_type: node
+bundle: speaker
+label: 'Drupal.org URL'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

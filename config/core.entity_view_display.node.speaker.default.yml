@@ -1,0 +1,67 @@
+uuid: 8b41b039-22ea-4c32-8300-f789ac07c4f9
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.speaker.body
+    - field.field.node.speaker.field_drupalorg_url
+    - field.field.node.speaker.field_tagline
+    - field.field.node.speaker.field_twitter
+    - field.field.node.speaker.field_website
+    - node.type.speaker
+  module:
+    - link
+    - text
+    - user
+id: node.speaker.default
+targetEntityType: node
+bundle: speaker
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+  field_drupalorg_url:
+    weight: 3
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_tagline:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    type: text_trimmed
+  field_twitter:
+    weight: 4
+    label: visually_hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+  field_website:
+    weight: 5
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  links:
+    weight: 2
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

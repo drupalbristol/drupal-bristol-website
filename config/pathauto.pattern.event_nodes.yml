@@ -1,0 +1,23 @@
+uuid: e728d33f-f830-4c11-8500-ddddbdd65c49
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: event_nodes
+label: 'Event nodes'
+type: 'canonical_entities:node'
+pattern: 'events/[node:field_date]/[node:title]'
+selection_criteria:
+  d41211cb-5b7d-48df-8c00-d8b40c88cfac:
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: node
+    uuid: d41211cb-5b7d-48df-8c00-d8b40c88cfac
+selection_logic: and
+weight: -5
+context_definitions: {  }

@@ -1,0 +1,19 @@
+uuid: 5111669f-84f8-4988-9427-39e87a402e86
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_event
+field_name: field_event
+entity_type: node
+type: entity_reference
+settings:
+  target_type: node
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

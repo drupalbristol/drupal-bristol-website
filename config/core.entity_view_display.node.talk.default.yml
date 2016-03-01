@@ -1,0 +1,60 @@
+uuid: ea6d0583-f47b-4a3c-a800-c54db3659083
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.talk.body
+    - field.field.node.talk.field_event
+    - field.field.node.talk.field_slides_embed
+    - field.field.node.talk.field_slides_link
+    - field.field.node.talk.field_speakers
+    - node.type.talk
+  module:
+    - link
+    - text
+    - user
+id: node.talk.default
+targetEntityType: node
+bundle: talk
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+  field_event:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  field_slides_embed:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+  field_slides_link:
+    weight: 104
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+  field_speakers:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+  links:
+    weight: 100
+hidden: {  }

@@ -1,0 +1,33 @@
+uuid: 878ba6a7-2d33-4f4f-8f25-37f1e618bc22
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.venues.field_website
+    - taxonomy.vocabulary.venues
+  module:
+    - link
+    - text
+id: taxonomy_term.venues.default
+targetEntityType: taxonomy_term
+bundle: venues
+mode: default
+content:
+  description:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+  field_website:
+    weight: 1
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+hidden: {  }

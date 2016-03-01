@@ -1,0 +1,21 @@
+uuid: c94cf24a-5a07-43d2-9800-bdea01fbbf5d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_tagline
+    - node.type.speaker
+  module:
+    - text
+id: node.speaker.field_tagline
+field_name: field_tagline
+entity_type: node
+bundle: speaker
+label: Tagline
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,32 @@
+uuid: 0e91a199-f2fe-4413-b311-176154c22a94
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.speaker.body
+    - field.field.node.speaker.field_drupalorg_url
+    - field.field.node.speaker.field_tagline
+    - field.field.node.speaker.field_twitter
+    - node.type.speaker
+  module:
+    - text
+    - user
+id: node.speaker.teaser
+targetEntityType: node
+bundle: speaker
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+  links:
+    weight: 100
+hidden:
+  field_drupalorg_url: true
+  field_tagline: true
+  field_twitter: true

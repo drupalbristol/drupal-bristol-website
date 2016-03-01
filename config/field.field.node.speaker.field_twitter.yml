@@ -1,0 +1,19 @@
+uuid: 7d488174-663c-42f4-b407-7b5e6e596cda
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_twitter
+    - node.type.speaker
+id: node.speaker.field_twitter
+field_name: field_twitter
+entity_type: node
+bundle: speaker
+label: Twitter
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

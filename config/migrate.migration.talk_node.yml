@@ -1,0 +1,41 @@
+uuid: d3601521-1852-40d4-8c34-52b067c873a4
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupalbristol_migrate
+_core:
+  default_config_hash: 8sjXLPPquCeLk2ekD4nKcRI-D73vBQYIyjcQnxV3_Wk
+id: talk_node
+migration_tags: null
+label: ''
+source:
+  plugin: talk_node
+process:
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 1
+  type:
+    plugin: default_value
+    default_value: talk
+  body/value: abstract
+  body/format:
+    plugin: default_value
+    default_value: restricted_html
+  field_slides_link/uri: slides_link
+  field_slides_embed: slides_embed
+  field_event:
+    plugin: migration
+    migration: event_node
+    source: event_id
+  field_speakers:
+    -
+      plugin: migration
+      migration: speaker_node
+      source: speaker_ids
+destination:
+  plugin: 'entity:nod'
+template: null
+migration_dependencies: {  }
+migration_group: null

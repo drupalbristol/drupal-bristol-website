@@ -1,0 +1,33 @@
+uuid: 65d19955-829d-4077-8814-205abaaa6eba
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupalbristol_migrate
+    - node
+_core:
+  default_config_hash: cmRXzsY6dt_vXQHUG8YlGwo6h5wyULMh0UUAIJ9M_tQ
+id: event_node
+migration_tags: null
+label: ''
+source:
+  plugin: event_node
+process:
+  title: name
+  uid:
+    plugin: default_value
+    default_value: 1
+  type:
+    plugin: default_value
+    default_value: event
+  field_date: date
+  field_venue:
+    plugin: migration
+    migration: venue_term
+    source: venue_id
+  field_link/uri: link
+destination:
+  plugin: 'entity:node'
+template: null
+migration_dependencies: {  }
+migration_group: null

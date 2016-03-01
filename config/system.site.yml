@@ -1,0 +1,14 @@
+uuid: 28200c91-cf1e-4427-8b5d-930d716eca37
+name: 'Drupal Bristol'
+mail: info@drupalbristol.org.uk
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yXadRE77Va-G6dxhd2kPYapAvbnSvTF6hO4oXiOEynI

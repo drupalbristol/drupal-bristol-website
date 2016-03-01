@@ -1,0 +1,22 @@
+uuid: d581e0b8-eb8f-4631-9e25-37f8950a9bf2
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.talk
+id: node.talk.promote
+field_name: promote
+entity_type: node
+bundle: talk
+label: 'Promoted to front page'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: 'On'
+  off_label: 'Off'
+field_type: boolean

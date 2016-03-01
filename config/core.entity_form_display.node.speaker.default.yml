@@ -1,0 +1,94 @@
+uuid: bc9d8b4d-dd68-4d48-b501-1ae7ff5c55b8
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.speaker.body
+    - field.field.node.speaker.field_drupalorg_url
+    - field.field.node.speaker.field_tagline
+    - field.field.node.speaker.field_twitter
+    - field.field.node.speaker.field_website
+    - node.type.speaker
+  module:
+    - link
+    - path
+    - text
+id: node.speaker.default
+targetEntityType: node
+bundle: speaker
+mode: default
+content:
+  body:
+    type: text_textarea_with_summary
+    weight: 2
+    settings:
+      rows: 9
+      summary_rows: 3
+      placeholder: ''
+    third_party_settings: {  }
+  created:
+    type: datetime_timestamp
+    weight: 6
+    settings: {  }
+    third_party_settings: {  }
+  field_drupalorg_url:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_tagline:
+    weight: 1
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textfield
+  field_twitter:
+    weight: 4
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+  field_website:
+    weight: 26
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  path:
+    type: path
+    weight: 9
+    settings: {  }
+    third_party_settings: {  }
+  promote:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 7
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
+    weight: 8
+    third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  uid:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

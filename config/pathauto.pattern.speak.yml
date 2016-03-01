@@ -1,0 +1,23 @@
+uuid: ad531026-8931-4b10-8a36-5444e6fb8bb0
+langcode: en
+status: true
+dependencies:
+  module:
+    - ctools
+    - node
+id: speak
+label: 'Speaker nodes'
+type: 'canonical_entities:node'
+pattern: 'speakers/[node:title]'
+selection_criteria:
+  eab07584-81b9-4c9a-a04f-79396933172a:
+    id: 'entity_bundle:node'
+    bundles:
+      speaker: speaker
+    negate: false
+    context_mapping:
+      node: node
+    uuid: eab07584-81b9-4c9a-a04f-79396933172a
+selection_logic: and
+weight: -5
+context_definitions: {  }

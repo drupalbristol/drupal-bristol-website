@@ -1,0 +1,12 @@
+uuid: ef8ad99b-4395-474c-a606-6a8a9902e58e
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: c4zaT5cyPxuTXI6JOWt3qRtMvICT9tHB6d9a5VG-CmQ
+id: feedback
+label: 'Website feedback'
+recipients:
+  - info@drupalbristol.org.uk
+reply: ''
+weight: 0

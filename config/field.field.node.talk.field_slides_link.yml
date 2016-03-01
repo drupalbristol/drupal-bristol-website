@@ -1,0 +1,23 @@
+uuid: 1fbd0d7c-3732-40eb-a15a-9082c6accb32
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_slides_link
+    - node.type.talk
+  module:
+    - link
+id: node.talk.field_slides_link
+field_name: field_slides_link
+entity_type: node
+bundle: talk
+label: 'Link to slides'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
