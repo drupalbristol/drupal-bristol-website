@@ -1,0 +1,8 @@
+name: Drupal Bristol Migrate
+type: module
+core: 8.x
+package: Drupal Bristol
+dependencies:
+  - migrate
+  - migrate_plus
+  - migrate_tools

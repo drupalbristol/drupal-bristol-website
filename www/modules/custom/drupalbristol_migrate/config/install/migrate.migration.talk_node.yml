@@ -1,0 +1,32 @@
+id: talk_node
+label: ''
+source:
+  plugin: talk_node
+destination:
+  plugin: entity:nod
+process:
+  title: title
+  uid:
+    plugin: default_value
+    default_value: 1
+  type:
+    plugin: default_value
+    default_value: talk
+  body/value: abstract
+  body/format:
+    plugin: default_value
+    default_value: restricted_html
+  field_slides_link/uri: slides_link
+  field_slides_embed: slides_embed
+  field_event:
+      plugin: migration
+      migration: event_node
+      source: event_id
+  field_speakers:
+    - plugin: migration
+      migration: speaker_node
+      source: speaker_ids
+migrate_dependencies:
+  required:
+    - event_node
+    - speaker_node

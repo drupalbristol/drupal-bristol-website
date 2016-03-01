@@ -1,0 +1,25 @@
+id: event_node
+label: ''
+migration_groups:
+  - Drupal Bristol
+source:
+  plugin: event_node
+destination:
+  plugin: entity:node
+process:
+  title: name
+  uid:
+    plugin: default_value
+    default_value: 1
+  type:
+    plugin: default_value
+    default_value: event
+  field_date: date
+  field_venue:
+      plugin: migration
+      migration: venue_term
+      source: venue_id
+  field_link/uri: link
+migrate_dependencies:
+  required:
+    - venue_term

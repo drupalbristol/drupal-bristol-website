@@ -1,0 +1,11 @@
+id: venue_term
+source:
+  plugin: venue_term
+destination:
+  plugin: entity:taxonomy_term
+process:
+  name: name
+  vid:
+    plugin: default_value
+    default_value: venues
+  field_website/uri: website

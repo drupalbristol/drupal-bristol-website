@@ -1,0 +1,12 @@
+id: speaker_node
+source:
+  plugin: speaker_node
+destination:
+  plugin: entity:node
+  type: speaker
+process:
+  title: name
+  field_tagline: bio
+  field_twitter: twitter
+  field_drupalorg_url/uri: drupalorg
+  field_website/uri: website
