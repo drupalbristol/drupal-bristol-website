@@ -8,6 +8,7 @@ dependencies:
     - field.field.node.speaker.field_drupalorg_url
     - field.field.node.speaker.field_tagline
     - field.field.node.speaker.field_twitter
+    - field.field.node.speaker.field_website
     - node.type.speaker
   module:
     - text
@@ -30,3 +31,4 @@ hidden:
   field_drupalorg_url: true
   field_tagline: true
   field_twitter: true
+  field_website: true

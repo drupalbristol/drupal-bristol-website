@@ -4,8 +4,10 @@ status: true
 dependencies:
   config:
     - field.field.user.user.user_picture
+    - image.style.thumbnail
   module:
     - image
+    - path
     - user
 _core:
   default_config_hash: Aa0rnGnFvcpVmC8SGW68BNYde2tSrNzOmvfAzSeIUVI
@@ -20,6 +22,11 @@ content:
     weight: 5
   language:
     weight: 0
+  path:
+    type: path
+    weight: 30
+    settings: {  }
+    third_party_settings: {  }
   timezone:
     weight: 6
   user_picture:

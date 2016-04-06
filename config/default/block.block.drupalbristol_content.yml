@@ -1,0 +1,22 @@
+uuid: 7f282fa0-9e25-4ae7-a3aa-b405b810cbd6
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: drupalbristol_content
+theme: drupalbristol
+region: content
+weight: -7
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

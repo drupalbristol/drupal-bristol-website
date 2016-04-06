@@ -1,0 +1,22 @@
+uuid: 020da995-e00c-406f-8cb8-2c93c7663026
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: oXUb3JZR2WW5VOdw4HrhRicCsq51mCgLfRyvheG68ck
+id: drupalbristol_breadcrumbs
+theme: drupalbristol
+region: '-1'
+weight: -11
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }

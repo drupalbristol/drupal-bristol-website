@@ -1,0 +1,22 @@
+uuid: 6877ddf9-5559-41c4-bace-78de62e02c4b
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: drupalbristol_messages
+theme: drupalbristol
+region: '-1'
+weight: -4
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

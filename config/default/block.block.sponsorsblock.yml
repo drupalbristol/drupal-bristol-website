@@ -1,0 +1,20 @@
+uuid: bc1d47cb-6dfd-45f4-b120-83570f90d6be
+langcode: en
+status: true
+dependencies:
+  module:
+    - drupalbristol_sponsors
+  theme:
+    - bartik
+id: sponsorsblock
+theme: bartik
+region: sidebar_second
+weight: null
+provider: null
+plugin: sponsors_block
+settings:
+  id: sponsors_block
+  label: 'Sponsors block'
+  provider: drupalbristol_sponsors
+  label_display: visible
+visibility: {  }

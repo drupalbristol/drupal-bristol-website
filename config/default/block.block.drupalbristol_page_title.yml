@@ -1,0 +1,20 @@
+uuid: 1a574e3b-d9d2-4e24-bed8-a794ce223f1d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: 7rR9chwXvdM2H8OYMAYx9Zj3GGlPMrZp_M3ZA4thYTk
+id: drupalbristol_page_title
+theme: drupalbristol
+region: content
+weight: -10
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

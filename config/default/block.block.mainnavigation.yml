@@ -1,0 +1,24 @@
+uuid: 2ddc4cb8-700b-4f16-9572-8c4da47e0021
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - drupalbristol
+id: mainnavigation
+theme: drupalbristol
+region: primary_menu
+weight: -10
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 0
+visibility: {  }

@@ -1,0 +1,65 @@
+uuid: a20667ae-afd6-4f90-97a7-7d8928cfc7cd
+langcode: en
+status: true
+dependencies:
+  config:
+    - drupalbristol_sponsors.sponsor_type.meetup
+    - field.field.sponsor.meetup.field_end_date
+    - field.field.sponsor.meetup.field_logo
+    - field.field.sponsor.meetup.field_start_date
+    - field.field.sponsor.meetup.field_website
+    - image.style.thumbnail
+  module:
+    - datetime
+    - image
+    - link
+id: sponsor.meetup.default
+targetEntityType: sponsor
+bundle: meetup
+mode: default
+content:
+  field_end_date:
+    weight: 4
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_logo:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_start_date:
+    weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_default
+  field_website:
+    weight: 2
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  langcode:
+    type: language_select
+    weight: 5
+    settings: {  }
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

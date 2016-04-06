@@ -1,0 +1,20 @@
+uuid: c0346716-0e96-44d9-b2f1-068ff7e0a5d9
+langcode: en
+status: true
+dependencies:
+  module:
+    - datetime
+    - drupalbristol_sponsors
+id: sponsor.field_end_date
+field_name: field_end_date
+entity_type: sponsor
+type: datetime
+settings:
+  datetime_type: date
+module: datetime
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

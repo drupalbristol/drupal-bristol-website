@@ -1,0 +1,20 @@
+uuid: da660dac-886b-4431-b6d9-09d074edd729
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalbristol
+id: poweredbydrupal
+theme: drupalbristol
+region: footer_fifth
+weight: -12
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: visible
+visibility: {  }

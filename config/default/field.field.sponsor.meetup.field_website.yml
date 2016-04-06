@@ -1,0 +1,23 @@
+uuid: abad7844-c858-448a-94bd-d2cdd1123934
+langcode: en
+status: true
+dependencies:
+  config:
+    - drupalbristol_sponsors.sponsor_type.meetup
+    - field.storage.sponsor.field_website
+  module:
+    - link
+id: sponsor.meetup.field_website
+field_name: field_website
+entity_type: sponsor
+bundle: meetup
+label: Website
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

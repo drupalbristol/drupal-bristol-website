@@ -1,0 +1,22 @@
+uuid: 6e799cc3-741d-446b-9e64-d093316e0ae0
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: drupalbristol_help
+theme: drupalbristol
+region: content
+weight: -11
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

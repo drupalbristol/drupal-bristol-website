@@ -1,0 +1,24 @@
+uuid: 43af8476-79ec-43b4-8979-857475634775
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sponsors
+  module:
+    - views
+  theme:
+    - bartik
+id: views_block__sponsors_block_1
+theme: bartik
+region: sidebar_second
+weight: null
+provider: null
+plugin: 'views_block:sponsors-block_1'
+settings:
+  id: 'views_block:sponsors-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

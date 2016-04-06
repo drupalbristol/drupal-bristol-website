@@ -1,0 +1,32 @@
+uuid: 565c5256-1465-4363-862a-3882a972c67c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.talks
+  module:
+    - node
+    - views
+  theme:
+    - drupalbristol
+id: drupalbristol_views_block__talks_block_1
+theme: drupalbristol
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:talks-block_1'
+settings:
+  id: 'views_block:talks-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      speaker: speaker
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

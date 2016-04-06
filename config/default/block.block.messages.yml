@@ -1,0 +1,20 @@
+uuid: e46da339-8346-41dd-b515-8686b96a5b6f
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalbristol
+id: messages
+theme: drupalbristol
+region: highlighted
+weight: -12
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Messages
+  provider: system
+  label_display: '0'
+visibility: {  }

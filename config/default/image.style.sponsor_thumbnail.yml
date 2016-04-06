@@ -1,0 +1,15 @@
+uuid: ab58c709-885e-478f-9acf-e1e045801a7a
+langcode: en
+status: true
+dependencies: {  }
+name: sponsor_thumbnail
+label: 'Sponsor thumbnail'
+effects:
+  b4d4d56d-1e2e-4fc8-8efc-8781f8099178:
+    uuid: b4d4d56d-1e2e-4fc8-8efc-8781f8099178
+    id: image_scale
+    weight: 1
+    data:
+      width: null
+      height: 60
+      upscale: false

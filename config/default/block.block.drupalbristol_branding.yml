@@ -1,0 +1,25 @@
+uuid: 8a8e0f4e-2cfa-4ed1-8a1e-271d47ca1175
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: drupalbristol_branding
+theme: drupalbristol
+region: '-1'
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

@@ -1,0 +1,20 @@
+uuid: 0c28f158-2b03-48cb-8dd6-f93e1fc56067
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalbristol
+id: breadcrumbs
+theme: drupalbristol
+region: breadcrumb
+weight: -12
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: visible
+visibility: {  }

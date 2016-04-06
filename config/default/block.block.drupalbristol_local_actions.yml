@@ -1,0 +1,20 @@
+uuid: aafc5fda-0887-4acb-b011-3070538f1022
+langcode: en
+status: true
+dependencies:
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: drupalbristol_local_actions
+theme: drupalbristol
+region: content
+weight: -9
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

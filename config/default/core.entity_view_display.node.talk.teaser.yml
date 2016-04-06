@@ -5,6 +5,10 @@ dependencies:
   config:
     - core.entity_view_mode.node.teaser
     - field.field.node.talk.body
+    - field.field.node.talk.field_event
+    - field.field.node.talk.field_slides_embed
+    - field.field.node.talk.field_slides_link
+    - field.field.node.talk.field_speakers
     - node.type.talk
   module:
     - text
@@ -23,4 +27,8 @@ content:
     third_party_settings: {  }
   links:
     weight: 100
-hidden: {  }
+hidden:
+  field_event: true
+  field_slides_embed: true
+  field_slides_link: true
+  field_speakers: true

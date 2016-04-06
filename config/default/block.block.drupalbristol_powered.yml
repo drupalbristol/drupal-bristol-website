@@ -1,0 +1,22 @@
+uuid: 2814b4b3-17fd-4f39-bcc9-dc3d2292f931
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: drupalbristol_powered
+theme: drupalbristol
+region: '-1'
+weight: -8
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

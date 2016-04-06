@@ -1,0 +1,21 @@
+uuid: d85ef4ee-5bdc-45bb-a35f-b2772c928e49
+langcode: en
+status: true
+dependencies:
+  config:
+    - drupalbristol_sponsors.sponsor_type.meetup
+    - field.storage.sponsor.field_end_date
+  module:
+    - datetime
+id: sponsor.meetup.field_end_date
+field_name: field_end_date
+entity_type: sponsor
+bundle: meetup
+label: 'End date'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

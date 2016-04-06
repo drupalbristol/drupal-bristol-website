@@ -1,0 +1,22 @@
+uuid: 6d3e7748-af89-4ce6-b9c5-56d9d3062fef
+langcode: en
+status: false
+dependencies:
+  module:
+    - search
+  theme:
+    - drupalbristol
+_core:
+  default_config_hash: za-39d5WDUg6XvbyqSnuVYEeq6QM4qKJxW8MnoAha5A
+id: drupalbristol_search
+theme: drupalbristol
+region: '-1'
+weight: -7
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Search
+  provider: search
+  label_display: visible
+visibility: {  }
