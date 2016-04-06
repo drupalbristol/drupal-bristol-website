@@ -1,0 +1,4 @@
+global-styling:
+  css:
+    base:
+      css/drupalbristol.css: {}

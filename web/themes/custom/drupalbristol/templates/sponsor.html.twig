@@ -1,0 +1,29 @@
+{#
+/**
+ * @file sponsor.html.twig
+ * Default theme implementation to present Sponsor data.
+ *
+ * This template is used when viewing Sponsor pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_sponsor()
+ *
+ * @ingroup themeable
+ */
+#}
+{%
+set classes = [
+  'sponsor'
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  {% if content %}
+    <a href="{{ content.field_website[0] }}" title="{{ content.name[0] }}">
+      {{ content.field_logo }}
+    </a>
+  {% endif %}
+</div>
