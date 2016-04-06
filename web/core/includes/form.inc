@@ -325,6 +325,10 @@ function template_preprocess_vertical_tabs(&$variables) {
  */
 function template_preprocess_input(&$variables) {
   $element = $variables['element'];
+  // Remove name attribute if empty, for W3C compliance.
+  if (isset($variables['attributes']['name']) && empty((string) $variables['attributes']['name'])) {
+    unset($variables['attributes']['name']);
+  }
   $variables['children'] = $element['#children'];
 }
 
@@ -683,8 +687,8 @@ function template_preprocess_form_element_label(&$variables) {
  *     .module file. The path should be relative to base_path(), and thus should
  *     be built using drupal_get_path().
  *   - css: Array of paths to CSS files to be used on the progress page.
- *   - url_options: options passed to url() when constructing redirect URLs for
- *     the batch.
+ *   - url_options: options passed to the \Drupal\Core\Url object when
+ *     constructing redirect URLs for the batch.
  *   - progressive: A Boolean that indicates whether or not the batch needs to
  *     run progressively. TRUE indicates that the batch will run in more than
  *     one run. FALSE (default) indicates that the batch will finish in a single
@@ -882,15 +886,13 @@ function &batch_get() {
  *
  * Depending on whether the batch is progressive or not, the
  * Drupal\Core\Queue\Batch or Drupal\Core\Queue\BatchMemory handler classes will
- * be used.
+ * be used. The name and class of the queue are added by reference to the
+ * batch set.
  *
  * @param $batch
  *   The batch array.
  * @param $set_id
  *   The id of the set to process.
- *
- * @return
- *   The name and class of the queue are added by reference to the batch set.
  */
 function _batch_populate_queue(&$batch, $set_id) {
   $batch_set = &$batch['sets'][$set_id];

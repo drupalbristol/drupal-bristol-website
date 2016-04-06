@@ -258,11 +258,10 @@ function drupal_get_path($type, $name) {
  * Translates a string to the current language or to a given language.
  *
  * In order for strings to be localized, make them available in one of the ways
- * supported by the
- * @link https://www.drupal.org/node/322729 Localization API @endlink. When
- * possible, use the \Drupal\Core\StringTranslation\StringTranslationTrait
- * $this->t(). Otherwise create a new
- * \Drupal\Core\StringTranslation\TranslatableMarkup object directly.
+ * supported by the @link i18n Localization API. @endlink When possible, use
+ * the \Drupal\Core\StringTranslation\StringTranslationTrait $this->t().
+ * Otherwise create a new \Drupal\Core\StringTranslation\TranslatableMarkup
+ * object directly.
  *
  * See \Drupal\Core\StringTranslation\TranslatableMarkup::__construct() for
  * important security information and usage guidelines.
@@ -281,7 +280,8 @@ function drupal_get_path($type, $name) {
  *   - 'langcode' (defaults to the current language): A language code, to
  *     translate to a language other than what is used to display the page.
  *   - 'context' (defaults to the empty context): The context the source string
- *     belongs to.
+ *     belongs to. See the @link i18n Internationalization topic @endlink for
+ *     more information about string contexts.
  *
  * @return \Drupal\Core\StringTranslation\TranslatableMarkup
  *   An object that, when cast to a string, returns the translated string.
@@ -299,12 +299,13 @@ function t($string, array $args = array(), array $options = array()) {
 /**
  * Formats a string for HTML display by replacing variable placeholders.
  *
- * @see \Drupal\Component\Utility\SafeMarkup::format()
+ * @see \Drupal\Component\Render\FormattableMarkup::placeholderFormat()
+ * @see \Drupal\Component\Render\FormattableMarkup
  * @see t()
  * @ingroup sanitization
  *
  * @deprecated in Drupal 8.0.0, will be removed before Drupal 9.0.0.
- *   Use \Drupal\Component\Utility\SafeMarkup::format().
+ *   Use \Drupal\Component\Render\FormattableMarkup.
  */
 function format_string($string, array $args) {
   return SafeMarkup::format($string, $args);

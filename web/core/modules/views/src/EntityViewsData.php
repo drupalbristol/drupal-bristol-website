@@ -28,7 +28,7 @@ class EntityViewsData implements EntityHandlerInterface, EntityViewsDataInterfac
   use StringTranslationTrait;
 
   /**
-   * Entity type for this views controller instance.
+   * Entity type for this views data handler instance.
    *
    * @var \Drupal\Core\Entity\EntityTypeInterface
    */
@@ -68,7 +68,7 @@ class EntityViewsData implements EntityHandlerInterface, EntityViewsDataInterfac
    * @param \Drupal\Core\Entity\EntityTypeInterface $entity_type
    *   The entity type to provide views integration for.
    * @param \Drupal\Core\Entity\Sql\SqlEntityStorageInterface $storage_controller
-   *   The storage controller used for this entity type.
+   *   The storage handler used for this entity type.
    * @param \Drupal\Core\Entity\EntityManagerInterface $entity_manager
    *   The entity manager.
    * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
@@ -217,7 +217,7 @@ class EntityViewsData implements EntityHandlerInterface, EntityViewsDataInterfac
         $data[$revision_data_table]['table']['group'] = $this->t('@entity_type revision', ['@entity_type' => $this->entityType->getLabel()]);
         $data[$revision_data_table]['table']['entity revision'] = TRUE;
 
-        $data[$revision_data_table]['table']['join'][$revision_table] = array(
+        $data[$revision_table]['table']['join'][$revision_data_table] = array(
           'left_field' => $revision_field,
           'field' => $revision_field,
           'type' => 'INNER',

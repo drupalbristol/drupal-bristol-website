@@ -61,8 +61,8 @@ class LanguageListBuilder extends DraggableListBuilder {
    * @param \Drupal\Core\Entity\EntityTypeInterface $entity_type
    *   The entity type definition.
    * @param \Drupal\Core\Entity\EntityStorageInterface $storage
-   *   The entity storage controller class.
-   * @param \Drupal\Core\Language\LanguageManagerInterface
+   *   The entity storage handler class.
+   * @param \Drupal\Core\Language\LanguageManagerInterface $language_manager
    *   The language manager.
    * @param \Drupal\Core\Config\ConfigFactoryInterface $config_factory
    *   The factory for configuration objects.

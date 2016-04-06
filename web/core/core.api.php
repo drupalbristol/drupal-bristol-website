@@ -283,16 +283,16 @@
  *
  * The first task in using the simple configuration API is to define the
  * configuration file structure, file name, and schema of your settings (see
- * @ref sec_yaml above). Once you have done that, you can retrieve the
- * active configuration object that corresponds to configuration file
- * mymodule.foo.yml with a call to:
+ * @ref sec_yaml above). Once you have done that, you can retrieve the active
+ * configuration object that corresponds to configuration file mymodule.foo.yml
+ * with a call to:
  * @code
  * $config = \Drupal::config('mymodule.foo');
  * @endcode
  *
  * This will be an object of class \Drupal\Core\Config\Config, which has methods
- * for getting and setting configuration information.  For instance, if your
- * YAML file structure looks like this:
+ * for getting configuration information. For instance, if your YAML file
+ * structure looks like this:
  * @code
  * enabled: '0'
  * bar:
@@ -307,11 +307,33 @@
  * $bar = $config->get('bar');
  * // Get one element of the array.
  * $bar_baz = $config->get('bar.baz');
- * // Update a value. Nesting works the same as get().
- * $config->set('bar.baz', 'string2');
- * // Nothing actually happens with set() until you call save().
+ * @endcode
+ *
+ * The Config object that was obtained and used in the previous examples does
+ * not allow you to change configuration. If you want to change configuration,
+ * you will instead need to get the Config object by making a call to
+ * getEditable() on the config factory:
+ * @code
+ * $config =\Drupal::service('config.factory')->getEditable('mymodule.foo');
+ * @endcode
+ *
+ * Individual configuration values can be changed or added using the set()
+ * method and saved using the save() method:
+ * @code
+ * // Set a scalar value.
+ * $config->set('enabled', 1);
+ * // Save the configuration.
  * $config->save();
  * @endcode
+ *
+ * Configuration values can also be unset using the clear() method, which is
+ * also chainable:
+ * @code
+ * $config->clear('bar.boo')->save();
+ * $config_data = $config->get('bar');
+ * @endcode
+ * In this example $config_data would return an array with one key - 'baz' -
+ * because 'boo' was unset.
  *
  * @section sec_entity Configuration entities
  * In contrast to the simple configuration settings described in the previous
@@ -709,7 +731,8 @@
  * top-level core directory). Some Drupal Core modules and contributed modules
  * also define services in modulename.services.yml files. API reference sites
  * (such as https://api.drupal.org) generate lists of all existing services from
- * these files, or you can look through the individual files manually.
+ * these files. Look for the Services link in the API Navigation block.
+ * Alternatively you can look through the individual files manually.
  *
  * A typical service definition in a *.services.yml file looks like this:
  * @code
@@ -1045,8 +1068,8 @@
  * - The class name needs to end in the word Test.
  * - The namespace must be a subspace/subdirectory of \Drupal\yourmodule\Tests,
  *   where yourmodule is your module's machine name.
- * - The test class file must be named and placed under the yourmodule/tests/src
- *   directory, according to the PSR-4 standard.
+ * - The test class file must be named and placed under the
+ *   yourmodule/tests/src/Unit directory, according to the PSR-4 standard.
  * - Your test class needs a phpDoc comment block with a description and
  *   a @group annotation, which gives information about the test.
  * - Methods in your test class whose names start with 'test' are the actual
@@ -1071,7 +1094,7 @@
  *   $modules member variable -- keep in mind that by default, WebTestBase uses
  *   a "testing" install profile, with a minimal set of modules enabled.
  * - For functional tests that do not test web output, define a class that
- *   extends \Drupal\simpletest\KernelTestBase. This class is much faster
+ *   extends \Drupal\KernelTests\KernelTestBase. This class is much faster
  *   than WebTestBase, because instead of making a full install of Drupal, it
  *   uses an in-memory pseudo-installation (similar to what the installer and
  *   update scripts use). To use this test class, you will need to create the

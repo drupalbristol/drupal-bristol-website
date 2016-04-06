@@ -412,7 +412,7 @@ function system_authorized_init($callback, $file, $arguments = array(), $page_ti
  * Return the URL for the authorize.php script.
  *
  * @param array $options
- *   Optional array of options to pass to url().
+ *   Optional array of options to set on the \Drupal\Core\Url object.
  * @return \Drupal\Core\Url
  *   The full URL to authorize.php, using HTTPS if available.
  *
@@ -431,7 +431,7 @@ function system_authorized_get_url(array $options = array()) {
  * Returns the URL for the authorize.php script when it is processing a batch.
  *
  * @param array $options
- *   Optional array of options to pass to url().
+ *   Optional array of options to set on the \Drupal\Core\Url object.
  *
  * @return \Drupal\Core\Url
  */
@@ -1412,22 +1412,24 @@ function system_block_view_system_main_block_alter(array &$build, BlockPluginInt
 /**
  * Implements hook_path_update().
  */
-function system_path_update() {
-  \Drupal::service('path.alias_manager')->cacheClear();
+function system_path_update($path) {
+  $alias_manager = \Drupal::service('path.alias_manager');
+  $alias_manager->cacheClear($path['source']);
+  $alias_manager->cacheClear($path['original']['source']);
 }
 
 /**
  * Implements hook_path_insert().
  */
-function system_path_insert() {
-  \Drupal::service('path.alias_manager')->cacheClear();
+function system_path_insert($path) {
+  \Drupal::service('path.alias_manager')->cacheClear($path['source']);
 }
 
 /**
  * Implements hook_path_delete().
  */
 function system_path_delete($path) {
-  \Drupal::service('path.alias_manager')->cacheClear();
+  \Drupal::service('path.alias_manager')->cacheClear($path['source']);
 }
 
 /**
