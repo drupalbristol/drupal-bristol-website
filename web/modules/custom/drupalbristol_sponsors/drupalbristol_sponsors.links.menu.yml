@@ -1,0 +1,16 @@
+# Sponsor menu items definition
+entity.sponsor.collection:
+  title: 'Sponsor list'
+  route_name: entity.sponsor.collection
+  description: 'List Sponsor entities'
+  parent: system.admin_structure
+  weight: 100
+
+# Sponsor type menu items definition
+entity.sponsor_type.collection:
+  title: 'Sponsor type'
+  route_name: entity.sponsor_type.collection
+  description: 'List Sponsor type (bundles)'
+  parent: system.admin_structure
+  weight: 99
+

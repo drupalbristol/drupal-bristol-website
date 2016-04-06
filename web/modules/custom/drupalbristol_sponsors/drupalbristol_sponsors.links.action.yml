@@ -1,0 +1,11 @@
+entity.sponsor.add_form:
+  route_name: 'sponsor.add_page'
+  title: 'Add Sponsor'
+  appears_on:
+    - entity.sponsor.collection
+entity.sponsor_type.add_form:
+  route_name: 'entity.sponsor_type.add_form'
+  title: 'Add Sponsor type'
+  appears_on:
+    - entity.sponsor_type.collection
+

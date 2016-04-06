@@ -1,0 +1,19 @@
+add sponsor entities:
+  title: 'Create new Sponsor entities'
+
+administer sponsor entities:
+  title: 'Administer Sponsor entities'
+  description: 'Allow to access the administration form to configure Sponsor entities.'
+  restrict access: true
+
+delete sponsor entities:
+  title: 'Delete Sponsor entities'
+
+edit sponsor entities:
+  title: 'Edit Sponsor entities'
+
+view published sponsor entities:
+  title: 'View published Sponsor entities'
+
+view unpublished sponsor entities:
+  title: 'View unpublished Sponsor entities'

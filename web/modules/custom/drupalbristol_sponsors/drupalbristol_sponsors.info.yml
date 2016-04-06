@@ -1,0 +1,5 @@
+name: Drupal Bristol Sponsors
+type: module
+description: Drupal Bristol sponsors
+core: 8.x
+package: Custom

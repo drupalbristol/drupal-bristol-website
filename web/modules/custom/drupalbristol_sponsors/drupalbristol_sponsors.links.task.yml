@@ -1,0 +1,17 @@
+# Sponsor routing definition
+entity.sponsor.canonical:
+  route_name: entity.sponsor.canonical
+  base_route: entity.sponsor.canonical
+  title: 'View'
+
+entity.sponsor.edit_form:
+  route_name: entity.sponsor.edit_form
+  base_route: entity.sponsor.canonical
+  title: Edit
+
+entity.sponsor.delete_form:
+  route_name:  entity.sponsor.delete_form
+  base_route:  entity.sponsor.canonical
+  title: Delete
+  weight: 10
+
