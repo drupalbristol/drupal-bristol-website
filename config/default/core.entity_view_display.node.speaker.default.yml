@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.speaker.body
     - field.field.node.speaker.field_drupalorg_url
+    - field.field.node.speaker.field_image
     - field.field.node.speaker.field_tagline
     - field.field.node.speaker.field_twitter
     - field.field.node.speaker.field_website
     - node.type.speaker
   module:
+    - image
     - link
     - text
     - user
@@ -35,6 +37,14 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+  field_image:
+    weight: 6
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
   field_tagline:
     weight: 0
     label: hidden
