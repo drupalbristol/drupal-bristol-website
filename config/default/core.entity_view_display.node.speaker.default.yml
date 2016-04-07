@@ -5,11 +5,13 @@ dependencies:
   config:
     - field.field.node.speaker.body
     - field.field.node.speaker.field_drupalorg_url
+    - field.field.node.speaker.field_image
     - field.field.node.speaker.field_tagline
     - field.field.node.speaker.field_twitter
     - field.field.node.speaker.field_website
     - node.type.speaker
   module:
+    - image
     - link
     - text
     - user
@@ -21,12 +23,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
   field_drupalorg_url:
-    weight: 3
-    label: above
+    weight: 4
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -35,23 +37,31 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
-  field_tagline:
+  field_image:
     weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+  field_tagline:
+    weight: 1
     label: hidden
     settings:
       trim_length: 600
     third_party_settings: {  }
     type: text_trimmed
   field_twitter:
-    weight: 4
-    label: visually_hidden
+    weight: 5
+    label: inline
     settings:
       link_to_entity: false
     third_party_settings: {  }
     type: string
   field_website:
-    weight: 5
-    label: above
+    weight: 6
+    label: inline
     settings:
       trim_length: 80
       url_only: false
@@ -61,7 +71,7 @@ content:
     third_party_settings: {  }
     type: link
   links:
-    weight: 2
+    weight: 3
     settings: {  }
     third_party_settings: {  }
 hidden: {  }

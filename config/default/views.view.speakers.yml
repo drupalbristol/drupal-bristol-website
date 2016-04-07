@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.list
     - node.type.speaker
     - system.menu.main
   module:
@@ -55,7 +56,10 @@ display:
       style:
         type: html_list
       row:
-        type: fields
+        type: 'entity:node'
+        options:
+          relationship: none
+          view_mode: list
       fields:
         title:
           id: title

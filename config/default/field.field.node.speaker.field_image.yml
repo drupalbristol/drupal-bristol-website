@@ -1,0 +1,38 @@
+uuid: f686f2cb-7272-4a26-a7ff-e74333a6b158
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.speaker
+  module:
+    - image
+id: node.speaker.field_image
+field_name: field_image
+entity_type: node
+bundle: speaker
+label: Photo
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: 40780060-d940-4ef1-aef6-a285c020a8e3
+    alt: ''
+    title: ''
+    width: 400
+    height: 400
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

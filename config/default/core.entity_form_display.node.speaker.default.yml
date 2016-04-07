@@ -5,11 +5,14 @@ dependencies:
   config:
     - field.field.node.speaker.body
     - field.field.node.speaker.field_drupalorg_url
+    - field.field.node.speaker.field_image
     - field.field.node.speaker.field_tagline
     - field.field.node.speaker.field_twitter
     - field.field.node.speaker.field_website
+    - image.style.thumbnail
     - node.type.speaker
   module:
+    - image
     - link
     - path
     - text
@@ -38,6 +41,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+  field_image:
+    weight: 27
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
   field_tagline:
     weight: 1
     settings:

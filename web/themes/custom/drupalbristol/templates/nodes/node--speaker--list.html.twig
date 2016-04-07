@@ -1,0 +1,13 @@
+{%
+set classes = [
+  'node',
+  'node--type-' ~ node.bundle|clean_class,
+  view_mode ? 'node--view-mode-' ~ view_mode|clean_class,
+]
+%}
+<div{{ attributes.addClass(classes) }}>
+  <a href="{{ url }}" title="{{ label[0] }}">
+    {{ label }}
+    {{ content }}
+  </a>
+</div>

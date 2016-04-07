@@ -1,33 +1,33 @@
-uuid: 0e91a199-f2fe-4413-b311-176154c22a94
+uuid: e036860f-0da3-4514-a15b-39f6fc78b8d8
 langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.list
     - field.field.node.speaker.body
     - field.field.node.speaker.field_drupalorg_url
     - field.field.node.speaker.field_image
     - field.field.node.speaker.field_tagline
     - field.field.node.speaker.field_twitter
     - field.field.node.speaker.field_website
-    - image.style.medium
+    - image.style.speaker_small
     - node.type.speaker
   module:
     - image
     - user
-id: node.speaker.teaser
+id: node.speaker.list
 targetEntityType: node
 bundle: speaker
-mode: teaser
+mode: list
 content:
   field_image:
-    type: image
     weight: 0
     label: hidden
     settings:
-      image_style: medium
+      image_style: speaker_small
       image_link: ''
     third_party_settings: {  }
+    type: image
 hidden:
   body: true
   field_drupalorg_url: true
