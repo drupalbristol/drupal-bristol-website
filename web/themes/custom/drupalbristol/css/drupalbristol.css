@@ -24,15 +24,37 @@
     display: block;
     clear: both; }
   .view-speakers .view-content .item-list li {
-    width: 15.25424%;
+    width: 49.15254%;
     float: left;
     margin-right: 1.69492%;
     margin-bottom: 10px;
     padding: 0;
     position: relative;
     text-align: center; }
-    .view-speakers .view-content .item-list li:nth-child(6n) {
-      margin-right: 0; }
+    @media (max-width: 475px) {
+      .view-speakers .view-content .item-list li:nth-child(even) {
+        margin-right: 0; } }
+    @media (min-width: 475px) and (max-width: 700px) {
+      .view-speakers .view-content .item-list li {
+        width: 32.20339%;
+        float: left;
+        margin-right: 1.69492%; }
+        .view-speakers .view-content .item-list li:nth-child(3n) {
+          margin-right: 0; } }
+    @media (min-width: 700px) and (max-width: 1200px) {
+      .view-speakers .view-content .item-list li {
+        width: 23.72881%;
+        float: left;
+        margin-right: 1.69492%; }
+        .view-speakers .view-content .item-list li:nth-child(4n) {
+          margin-right: 0; } }
+    @media (min-width: 1200px) {
+      .view-speakers .view-content .item-list li {
+        width: 15.25424%;
+        float: left;
+        margin-right: 1.69492%; }
+        .view-speakers .view-content .item-list li:nth-child(6n) {
+          margin-right: 0; } }
   .view-speakers .view-content .item-list .field--name-title {
     bottom: 0;
     left: 0;
@@ -42,3 +64,5 @@
   .view-speakers .view-content .item-list .field--name-field-image {
     float: none;
     margin: 0 0 1.25em; }
+
+/*# sourceMappingURL=drupalbristol.css.map */

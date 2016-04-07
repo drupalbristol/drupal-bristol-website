@@ -4,14 +4,33 @@
       @include container(100%)
 
       li
-        @include span(2 of 12)
+        @include span(6 of 12)
         margin-bottom: 10px
         padding: 0
         position: relative
         text-align: center
 
-        &:nth-child(6n)
-          margin-right: 0
+        @include breakpoint(max-width 475px)
+          &:nth-child(even)
+            margin-right: 0
+
+        @include breakpoint(475px 700px)
+          @include span(4 of 12)
+
+          &:nth-child(3n)
+            margin-right: 0
+
+        @include breakpoint(700px 1200px)
+          @include span(3 of 12)
+
+          &:nth-child(4n)
+            margin-right: 0
+
+        @include breakpoint(1200px)
+          @include span(2 of 12)
+
+          &:nth-child(6n)
+            margin-right: 0
 
       .field--name-title
         bottom: 0
