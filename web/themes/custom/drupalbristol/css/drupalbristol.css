@@ -1,14 +1,44 @@
-.block-views-blocksponsors-block-1 .view-content ul {
+.block-views-blocksponsors-block-1 .view-content {
   overflow: hidden; }
+  .block-views-blocksponsors-block-1 .view-content li {
+    display: inline-block;
+    float: left; }
+  .block-views-blocksponsors-block-1 .view-content img {
+    height: auto;
+    max-height: 30px;
+    width: auto;
+    margin: 0 5px 5px 0; }
 
-.block-views-blocksponsors-block-1 .view-content li {
-  display: inline-block;
-  float: left; }
+.node--type-speaker .field--name-field-image img {
+  height: 100px;
+  width: 100px;
+  border: 1px solid #ccc;
+  border-radius: 100%; }
 
-.block-views-blocksponsors-block-1 .view-content img {
-  height: auto;
-  max-height: 30px;
-  width: auto;
-  margin: 0 5px 5px 0; }
-
-/*# sourceMappingURL=drupalbristol.css.map */
+.view-speakers .view-content .item-list {
+  max-width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .view-speakers .view-content .item-list:after {
+    content: " ";
+    display: block;
+    clear: both; }
+  .view-speakers .view-content .item-list li {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-bottom: 10px;
+    padding: 0;
+    position: relative;
+    text-align: center; }
+    .view-speakers .view-content .item-list li:nth-child(6n) {
+      margin-right: 0; }
+  .view-speakers .view-content .item-list .field--name-title {
+    bottom: 0;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    width: 100%; }
+  .view-speakers .view-content .item-list .field--name-field-image {
+    float: none;
+    margin: 0 0 1.25em; }
