@@ -1,0 +1,19 @@
+{
+  "name": "drupalbristol",
+  "description": "Drupal Bristol theme",
+  "main": "",
+  "license": "",
+  "homepage": "https://github.com/opdavies/drupal-bristol-website",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor/bower",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.12"
+  }
+}
