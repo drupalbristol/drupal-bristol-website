@@ -65,5 +65,7 @@
   .view-speakers .view-content .item-list .field--name-field-image {
     float: none;
     margin: 0; }
+    .view-speakers .view-content .item-list .field--name-field-image img {
+      height: auto; }
 
 /*# sourceMappingURL=drupalbristol.css.map */
