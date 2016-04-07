@@ -9,6 +9,7 @@ dependencies:
     - field.field.node.speaker.field_tagline
     - field.field.node.speaker.field_twitter
     - field.field.node.speaker.field_website
+    - image.style.speaker_large
     - node.type.speaker
   module:
     - image
@@ -41,7 +42,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
+      image_style: speaker_large
       image_link: ''
     third_party_settings: {  }
     type: image

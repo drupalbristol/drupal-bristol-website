@@ -3,13 +3,12 @@ langcode: en
 status: true
 dependencies: {  }
 name: speaker_small
-label: 'Speaker small'
+label: 'Speaker small (200x200)'
 effects:
-  b7bc3f5f-361e-4c86-94f3-30438d5fe6d8:
-    uuid: b7bc3f5f-361e-4c86-94f3-30438d5fe6d8
-    id: image_scale
-    weight: 1
+  e2dafa54-221b-4449-b966-bfb169bd3ce5:
+    uuid: e2dafa54-221b-4449-b966-bfb169bd3ce5
+    id: image_scale_and_crop
+    weight: 2
     data:
       width: 200
       height: 200
-      upscale: false

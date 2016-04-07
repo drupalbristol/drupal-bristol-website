@@ -1,0 +1,14 @@
+uuid: 7e539b65-0e07-42a8-ace2-de9fbd346010
+langcode: en
+status: true
+dependencies: {  }
+name: speaker_large
+label: 'Speaker large (400x400)'
+effects:
+  9754342b-4e51-4c32-b0c0-34395ac0772e:
+    uuid: 9754342b-4e51-4c32-b0c0-34395ac0772e
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 400
+      height: 400
