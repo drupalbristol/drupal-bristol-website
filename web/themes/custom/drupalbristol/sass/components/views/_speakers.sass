@@ -1,36 +1,23 @@
 .view-speakers
   .view-content
     .item-list
-      @include container(100%)
+      overflow: hidden
 
       li
-        @include span(6 of 12)
-        margin-bottom: 10px
-        padding: 0
         position: relative
         text-align: center
 
         @include breakpoint(max-width 475px)
-          &:nth-child(even)
-            margin-right: 0
+          @include speaker-photos(2, 3%)
 
         @include breakpoint(475px 700px)
-          @include span(4 of 12)
-
-          &:nth-child(3n)
-            margin-right: 0
+          @include speaker-photos(3, 3%)
 
         @include breakpoint(700px 1200px)
-          @include span(3 of 12)
-
-          &:nth-child(4n)
-            margin-right: 0
+          @include speaker-photos(4, 2%)
 
         @include breakpoint(1200px)
-          @include span(2 of 12)
-
-          &:nth-child(6n)
-            margin-right: 0
+          @include speaker-photos(6, 2%)
 
       .field--name-title
         bottom: 0
@@ -41,4 +28,4 @@
 
       .field--name-field-image
         float: none
-        margin: 0 0 1.25em
+        margin: 0

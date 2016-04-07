@@ -9,3 +9,13 @@
   height: auto
   max-height: $max-height / 2
   width: auto
+
+@mixin speaker-photos($number, $margin)
+  float: left
+  margin-bottom: $margin
+  margin-right: $margin
+  padding: 0
+  width: ((100% - (($number - 1) * $margin)) / $number)
+
+  &:nth-child(#{$number}n)
+    margin-right: 0

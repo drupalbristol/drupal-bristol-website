@@ -16,43 +16,44 @@
   border-radius: 100%; }
 
 .view-speakers .view-content .item-list {
-  max-width: 100%;
-  margin-left: auto;
-  margin-right: auto; }
-  .view-speakers .view-content .item-list:after {
-    content: " ";
-    display: block;
-    clear: both; }
+  overflow: hidden; }
   .view-speakers .view-content .item-list li {
-    width: 49.15254%;
-    float: left;
-    margin-right: 1.69492%;
-    margin-bottom: 10px;
-    padding: 0;
     position: relative;
     text-align: center; }
     @media (max-width: 475px) {
-      .view-speakers .view-content .item-list li:nth-child(even) {
-        margin-right: 0; } }
+      .view-speakers .view-content .item-list li {
+        float: left;
+        margin-bottom: 3%;
+        margin-right: 3%;
+        padding: 0;
+        width: 48.5%; }
+        .view-speakers .view-content .item-list li:nth-child(2n) {
+          margin-right: 0; } }
     @media (min-width: 475px) and (max-width: 700px) {
       .view-speakers .view-content .item-list li {
-        width: 32.20339%;
         float: left;
-        margin-right: 1.69492%; }
+        margin-bottom: 3%;
+        margin-right: 3%;
+        padding: 0;
+        width: 31.33333%; }
         .view-speakers .view-content .item-list li:nth-child(3n) {
           margin-right: 0; } }
     @media (min-width: 700px) and (max-width: 1200px) {
       .view-speakers .view-content .item-list li {
-        width: 23.72881%;
         float: left;
-        margin-right: 1.69492%; }
+        margin-bottom: 2%;
+        margin-right: 2%;
+        padding: 0;
+        width: 23.5%; }
         .view-speakers .view-content .item-list li:nth-child(4n) {
           margin-right: 0; } }
     @media (min-width: 1200px) {
       .view-speakers .view-content .item-list li {
-        width: 15.25424%;
         float: left;
-        margin-right: 1.69492%; }
+        margin-bottom: 2%;
+        margin-right: 2%;
+        padding: 0;
+        width: 15%; }
         .view-speakers .view-content .item-list li:nth-child(6n) {
           margin-right: 0; } }
   .view-speakers .view-content .item-list .field--name-title {
@@ -63,6 +64,6 @@
     width: 100%; }
   .view-speakers .view-content .item-list .field--name-field-image {
     float: none;
-    margin: 0 0 1.25em; }
+    margin: 0; }
 
 /*# sourceMappingURL=drupalbristol.css.map */
