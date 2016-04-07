@@ -16,5 +16,5 @@ settings:
   id: system_breadcrumb_block
   label: Breadcrumbs
   provider: system
-  label_display: visible
+  label_display: '0'
 visibility: {  }

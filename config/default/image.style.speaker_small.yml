@@ -1,0 +1,15 @@
+uuid: a5863663-616f-41ab-96e2-45f51617454c
+langcode: en
+status: true
+dependencies: {  }
+name: speaker_small
+label: 'Speaker small'
+effects:
+  b7bc3f5f-361e-4c86-94f3-30438d5fe6d8:
+    uuid: b7bc3f5f-361e-4c86-94f3-30438d5fe6d8
+    id: image_scale
+    weight: 1
+    data:
+      width: 200
+      height: 200
+      upscale: false
