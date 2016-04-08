@@ -7,17 +7,17 @@
         position: relative
         text-align: center
 
-        @include breakpoint(max-width 475px)
-          @include speaker-photos(2, 3%)
+        +breakpoint(max-width 475px)
+          +speaker-photos(2, 3%)
 
-        @include breakpoint(475px 700px)
-          @include speaker-photos(3, 3%)
+        +breakpoint(475px 700px)
+          +speaker-photos(3, 3%)
 
-        @include breakpoint(700px 1200px)
-          @include speaker-photos(4, 2%)
+        +breakpoint(700px 1200px)
+          +speaker-photos(4, 2%)
 
-        @include breakpoint(1200px)
-          @include speaker-photos(6, 2%)
+        +breakpoint(1200px)
+          +speaker-photos(6, 2%)
 
       .field--name-title
         bottom: 0

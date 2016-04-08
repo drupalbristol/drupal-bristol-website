@@ -12,8 +12,10 @@
 .node--type-speaker .field--name-field-image img {
   height: 100px;
   width: 100px;
-  border: 1px solid #ccc;
-  border-radius: 100%; }
+  border-color: #ccc;
+  border-radius: 100%;
+  border-style: solid;
+  border-width: 1px; }
 
 .view-speakers .view-content .item-list {
   overflow: hidden; }
