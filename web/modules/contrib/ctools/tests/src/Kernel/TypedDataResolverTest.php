@@ -5,7 +5,7 @@
  * Contains \Drupal\KernelTests\ctools\TypedDataResolverTest.
  */
 
-namespace Drupal\KernelTests\ctools;
+namespace Drupal\Tests\ctools\Kernel;
 
 use Drupal\Core\Entity\ContentEntityInterface;
 use Drupal\Core\Plugin\Context\Context;
@@ -14,6 +14,11 @@ use Drupal\entity_test\Entity\EntityTest;
 use Drupal\KernelTests\KernelTestBase;
 use Drupal\user\Entity\User;
 
+/**
+ * @coversDefaultClass \Drupal\ctools\TypedDataResolver
+ *
+ * @group CTools
+ */
 class TypedDataResolverTest extends KernelTestBase {
 
   /**
