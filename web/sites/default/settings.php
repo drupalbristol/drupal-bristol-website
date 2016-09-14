@@ -713,4 +713,4 @@ if (file_exists(__DIR__ . '/local.settings.php')) {
   include __DIR__ . '/local.settings.php';
 }
 
-$config_directories['sync'] = '../config/default';
+$config_directories['sync'] = '../config/sync';
