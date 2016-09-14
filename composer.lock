@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "2cabda7b17273af431f3257a905663c1",
-    "content-hash": "205155f68634a96f39c1a5b1d6078366",
+    "hash": "56aed3174fa328ffc25ca16342004ef1",
+    "content-hash": "5da8a820a12b0cf72ab17469ca483554",
     "packages": [
         {
             "name": "composer/installers",
@@ -801,7 +801,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/ctools-8.x-3.0-alpha27.zip",
-                "reference": null,
+                "reference": "8.x-3.0-alpha27",
                 "shasum": "3e069c46902dd05c2a4e0caf7b185942e9b53238"
             },
             "require": {
@@ -883,7 +883,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/google_analytics-8.x-2.1.zip",
-                "reference": null,
+                "reference": "8.x-2.1",
                 "shasum": "9b5c76802ca28d5072bb9bb552bbfeb660b0734a"
             },
             "require": {
@@ -926,16 +926,22 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "dev-1.x",
+            "version": "1.0.0-alpha3",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "445624c0d02a5e22f5839ac3ce65eaa088d747cb"
+                "reference": "8.x-1.0-alpha3"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-alpha3.zip",
+                "reference": null,
+                "shasum": "c6340e1a7d5f0a1d3cbe7b23b405000a44765ad2"
             },
             "require": {
                 "drupal/core": "*",
-                "drupal/ctools": "*",
-                "drupal/token": "*"
+                "drupal/ctools": "~3.0.0-alpha21",
+                "drupal/token": "~1.0.0-alpha2"
             },
             "type": "drupal-module",
             "extra": {
@@ -943,8 +949,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3+17-dev",
-                    "datestamp": "1473025439"
+                    "version": "8.x-1.0-alpha3",
+                    "datestamp": "1461007694"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -969,12 +975,11 @@
                     "homepage": "https://www.drupal.org/user/36762"
                 }
             ],
-            "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
+            "description": "Provides a generic set of views plugins a mechanism for modules to automatically generate aliases for the content they manage.",
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
-            },
-            "time": "2016-09-04 21:39:32"
+            }
         },
         {
             "name": "drupal/token",
@@ -987,7 +992,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta1.zip",
-                "reference": null,
+                "reference": "8.x-1.0-beta1",
                 "shasum": "342ecedce41275a3f605a36b5729b054415e8dda"
             },
             "require": {
@@ -3082,9 +3087,7 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "drupal/pathauto": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
