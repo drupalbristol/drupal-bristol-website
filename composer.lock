@@ -986,22 +986,22 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.0.0-alpha3",
+            "version": "1.0.0-beta1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "8.x-1.0-alpha3"
+                "reference": "8.x-1.0-beta1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-alpha3.zip",
-                "reference": "8.x-1.0-alpha3",
-                "shasum": "c6340e1a7d5f0a1d3cbe7b23b405000a44765ad2"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-beta1.zip",
+                "reference": null,
+                "shasum": "0c8756d73d5b1f95419921926e8e55bc0c69e41b"
             },
             "require": {
                 "drupal/core": "*",
-                "drupal/ctools": "~3.0.0-alpha21",
-                "drupal/token": "~1.0.0-alpha2"
+                "drupal/ctools": "*",
+                "drupal/token": "*"
             },
             "type": "drupal-module",
             "extra": {
@@ -1009,8 +1009,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-alpha3",
-                    "datestamp": "1461007694"
+                    "version": "8.x-1.0-beta1",
+                    "datestamp": "1474313339"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1035,7 +1035,7 @@
                     "homepage": "https://www.drupal.org/user/36762"
                 }
             ],
-            "description": "Provides a generic set of views plugins a mechanism for modules to automatically generate aliases for the content they manage.",
+            "description": "Provides a mechanism for modules to automatically generate aliases for the content they manage.",
             "homepage": "https://www.drupal.org/project/pathauto",
             "support": {
                 "source": "http://cgit.drupalcode.org/pathauto"
@@ -1043,17 +1043,17 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-beta2",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-beta2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "342ecedce41275a3f605a36b5729b054415e8dda"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta2.zip",
+                "reference": null,
+                "shasum": "b838318eddf46e4f382489de5516ab916257c393"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1064,8 +1064,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1470864453"
+                    "version": "8.x-1.0-beta2",
+                    "datestamp": "1474367039"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
