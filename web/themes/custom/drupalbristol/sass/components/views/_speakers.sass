@@ -1,34 +1,33 @@
-.view-speakers
-  .view-content
-    .item-list
-      overflow: hidden
+.view-speakers .view-content
+  .item-list
+    overflow: hidden
 
-      li
-        position: relative
-        text-align: center
+    li
+      position: relative
+      text-align: center
 
-        +breakpoint(max-width 475px)
-          +speaker-photos(2, 3%)
+      +breakpoint(max-width 475px)
+        +speaker-photos(2, 3%)
 
-        +breakpoint(475px 700px)
-          +speaker-photos(3, 3%)
+      +breakpoint(475px 700px)
+        +speaker-photos(3, 3%)
 
-        +breakpoint(700px 1200px)
-          +speaker-photos(4, 2%)
+      +breakpoint(700px 1200px)
+        +speaker-photos(4, 2%)
 
-        +breakpoint(1200px)
-          +speaker-photos(6, 2%)
+      +breakpoint(1200px)
+        +speaker-photos(6, 2%)
 
-      .field--name-title
-        bottom: 0
-        left: 0
-        line-height: 1
-        position: absolute
-        width: 100%
+  .field--name-title
+    bottom: 0
+    left: 0
+    line-height: 1
+    position: absolute
+    width: 100%
 
-      .field--name-field-image
-        float: none
-        margin: 0
+  .field--name-field-image
+    float: none
+    margin: 0
 
-        img
-          height: auto
+  .field--name-field-image img
+    height: auto
