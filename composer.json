@@ -46,5 +46,9 @@
     }
   },
   "minimum-stability": "dev",
-  "prefer-stable": true
+  "prefer-stable": true,
+  "require-dev": {
+    "drupal/devel": "^1.0",
+    "drupal/stage_file_proxy": "^1.0"
+  }
 }
