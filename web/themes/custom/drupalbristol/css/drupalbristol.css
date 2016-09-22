@@ -19,58 +19,54 @@
 
 .view-speakers .view-content .item-list {
   overflow: hidden; }
-  .view-speakers .view-content .item-list li {
-    position: relative;
-    text-align: center; }
-    @media (max-width: 475px) {
-      .view-speakers .view-content .item-list li {
-        float: left;
-        margin-bottom: 3%;
-        margin-right: 3%;
-        padding: 0;
-        width: 48.5%; }
-        .view-speakers .view-content .item-list li:nth-child(2n) {
-          margin-right: 0; } }
-    @media (min-width: 475px) and (max-width: 700px) {
-      .view-speakers .view-content .item-list li {
-        float: left;
-        margin-bottom: 3%;
-        margin-right: 3%;
-        padding: 0;
-        width: 31.33333%; }
-        .view-speakers .view-content .item-list li:nth-child(3n) {
-          margin-right: 0; } }
-    @media (min-width: 700px) and (max-width: 1200px) {
-      .view-speakers .view-content .item-list li {
-        float: left;
-        margin-bottom: 2%;
-        margin-right: 2%;
-        padding: 0;
-        width: 23.5%; }
-        .view-speakers .view-content .item-list li:nth-child(4n) {
-          margin-right: 0; } }
-    @media (min-width: 1200px) {
-      .view-speakers .view-content .item-list li {
-        float: left;
-        margin-bottom: 2%;
-        margin-right: 2%;
-        padding: 0;
-        width: 15%; }
-        .view-speakers .view-content .item-list li:nth-child(6n) {
-          margin-right: 0; } }
+
+.view-speakers .view-content .item-list ul {
+  -ms-flex-line-pack: distribute;
+      align-content: space-around;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.view-speakers .view-content .item-list li {
+  box-sizing: border-box;
+  padding: 2%;
+  text-align: center;
+  width: 50%; }
+  @media (min-width: 460px) {
+    .view-speakers .view-content .item-list li {
+      width: 33.3334%; } }
+  @media (min-width: 670px) {
+    .view-speakers .view-content .item-list li {
+      width: 25%; } }
+  @media (min-width: 1024px) {
+    .view-speakers .view-content .item-list li {
+      width: 20%; } }
+  @media (min-width: 1250px) {
+    .view-speakers .view-content .item-list li {
+      padding: 1%;
+      width: 16.66667%; } }
+
+.view-speakers .view-content .item-list a {
+  border-bottom: 0;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.view-speakers .view-content .field--type-image {
+  float: none;
+  margin: 0;
+  -ms-flex-order: 1;
+      order: 1; }
+
+.view-speakers .view-content .field--type-image img {
+  height: auto;
+  margin: 0;
+  max-width: 100%; }
 
 .view-speakers .view-content .field--name-title {
-  bottom: 0;
-  left: 0;
-  line-height: 1;
-  position: absolute;
-  width: 100%; }
-
-.view-speakers .view-content .field--name-field-image {
-  float: none;
-  margin: 0; }
-
-.view-speakers .view-content .field--name-field-image img {
-  height: auto; }
+  -ms-flex-order: 2;
+      order: 2; }
 
 /*# sourceMappingURL=drupalbristol.css.map */

@@ -2,32 +2,44 @@
   .item-list
     overflow: hidden
 
-    li
-      position: relative
-      text-align: center
+  .item-list ul
+    align-content: space-around
+    display: flex
+    flex-wrap: wrap
 
-      +breakpoint(max-width 475px)
-        +speaker-photos(2, 3%)
+  .item-list li
+    box-sizing: border-box
+    padding: 2%
+    text-align: center
+    width: 50%
 
-      +breakpoint(475px 700px)
-        +speaker-photos(3, 3%)
+    +breakpoint(460px)
+      width: 33.3334%
 
-      +breakpoint(700px 1200px)
-        +speaker-photos(4, 2%)
+    +breakpoint(670px)
+      width: 25%
 
-      +breakpoint(1200px)
-        +speaker-photos(6, 2%)
+    +breakpoint(1024px)
+      width: 20%
 
-  .field--name-title
-    bottom: 0
-    left: 0
-    line-height: 1
-    position: absolute
-    width: 100%
+    +breakpoint(1250px)
+      padding: 1%
+      width: 16.66667%
 
-  .field--name-field-image
+  .item-list a
+    border-bottom: 0
+    display: flex
+    flex-direction: column
+
+  .field--type-image
     float: none
     margin: 0
+    order: 1
 
-  .field--name-field-image img
+  .field--type-image img
     height: auto
+    margin: 0
+    max-width: 100%
+
+  .field--name-title
+    order: 2
