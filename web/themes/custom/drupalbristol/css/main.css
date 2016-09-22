@@ -33,16 +33,13 @@
   padding: 2%;
   text-align: center;
   width: 50%; }
-  @media (min-width: 460px) {
+  @media (min-width: 425px) {
     .view-speakers .view-content .item-list li {
       width: 33.3334%; } }
-  @media (min-width: 670px) {
-    .view-speakers .view-content .item-list li {
-      width: 25%; } }
   @media (min-width: 1024px) {
     .view-speakers .view-content .item-list li {
-      width: 20%; } }
-  @media (min-width: 1250px) {
+      width: 25%; } }
+  @media (min-width: 1200px) {
     .view-speakers .view-content .item-list li {
       padding: 1%;
       width: 16.66667%; } }
@@ -69,4 +66,4 @@
   -ms-flex-order: 2;
       order: 2; }
 
-/*# sourceMappingURL=drupalbristol.css.map */
+/*# sourceMappingURL=main.css.map */

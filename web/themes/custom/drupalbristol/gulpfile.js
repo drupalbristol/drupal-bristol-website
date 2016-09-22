@@ -10,7 +10,7 @@ var config = {
 };
 
 gulp.task('styles', function () {
-  gulp.src('sass/drupalbristol.sass')
+  gulp.src('sass/main.sass')
     .pipe(plugins.plumber())
     .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.init()))
     .pipe(plugins.sassGlob())
