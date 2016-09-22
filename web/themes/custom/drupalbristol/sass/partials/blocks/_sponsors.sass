@@ -1,7 +1,19 @@
-.block-views-blocksponsors-block-1
-  .view-content
-    +inline-block-list
+.block-views-blocksponsors-block-1 .view-content
+  img
+    +retina-image(60px)
+    margin: 0
 
-    img
-      +retina-image(60px)
-      margin: 0 5px 5px 0
+  .item-list ul
+    display: flex
+    flex-wrap: wrap
+    margin: 0
+
+  .item-list ul li
+    padding: 0
+
+  .item-list li
+    margin: 0 5% 3% 0
+
+    &:last-of-type
+      margin-right: 0
+
