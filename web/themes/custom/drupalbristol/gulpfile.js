@@ -19,6 +19,7 @@ gulp.task('styles', function () {
       browsers: ['last 2 versions']
     }))
     .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.write('.')))
+    .pipe(plugins.if(!config.production, plugins.refresh()))
     .pipe(gulp.dest('css'))
     .pipe(plugins.notify());
 });
@@ -28,6 +29,8 @@ gulp.task('clean', function () {
 });
 
 gulp.task('watch', function () {
+  plugins.refresh.listen();
+
   gulp.watch('sass/**/*.sass', ['styles']);
 });
 
