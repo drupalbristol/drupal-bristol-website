@@ -191,7 +191,12 @@ display:
       title: Talks
       header: {  }
       footer: {  }
-      empty: {  }
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          plugin_id: text
       relationships:
         field_event:
           id: field_event
@@ -262,7 +267,22 @@ display:
           plugin_id: numeric
       defaults:
         arguments: false
+        empty: false
       display_description: ''
+      empty:
+        area:
+          id: area
+          table: views
+          field: area
+          relationship: none
+          group_type: group
+          admin_label: ''
+          empty: true
+          tokenize: false
+          content:
+            value: 'No talks found for this speaker.'
+            format: basic_html
+          plugin_id: text
     cache_metadata:
       max-age: -1
       contexts:
@@ -290,6 +310,7 @@ display:
         weight: -47
         context: '0'
         menu_name: main
+        enabled: true
       defaults:
         relationships: true
         sorts: true

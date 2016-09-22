@@ -361,6 +361,7 @@ display:
         weight: 0
         context: '0'
         menu_name: main
+        enabled: true
       style:
         type: html_list
         options: {  }

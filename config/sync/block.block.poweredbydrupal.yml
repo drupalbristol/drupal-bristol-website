@@ -16,5 +16,5 @@ settings:
   id: system_powered_by_block
   label: 'Powered by Drupal'
   provider: system
-  label_display: visible
+  label_display: '0'
 visibility: {  }
