@@ -50,5 +50,8 @@
   "require-dev": {
     "drupal/devel": "^1.0",
     "drupal/stage_file_proxy": "^1.0"
+  },
+  "config": {
+    "sort-packages": true
   }
 }
