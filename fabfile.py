@@ -1,4 +1,4 @@
-from fabric.api import task, env, run
+from fabric.api import task, env, run, local, lcd
 from fabric.contrib.files import exists
 from fabric.contrib.project import rsync_project
 
@@ -10,7 +10,8 @@ drupal_root = '%s/web' % project_root
 @task
 def build_deploy():
   init()
-  # build()
+  file_permissions()
+  build()
   deploy()
   file_permissions()
 
@@ -20,6 +21,12 @@ def init():
     run('sudo mkdir -p %s/backups' % project_root)
     run('sudo mkdir -p %s/logs' % project_root)
     file_permissions()
+
+def build():
+  with lcd('web/themes/custom/drupalbristol'):
+    local('yarn --pure-lockfile')
+    local('./node_modules/.bin/bower install')
+    local('./node_modules/.bin/gulp --production')
 
 def deploy():
   rsync_project(

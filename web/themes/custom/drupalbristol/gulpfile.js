@@ -36,4 +36,4 @@ gulp.task('watch', function () {
 
 gulp.task('build', ['clean', 'styles']);
 
-gulp.task('default', ['build', 'watch']);
+gulp.task('default', ['build']);
