@@ -23,6 +23,7 @@ def init():
     file_permissions()
 
 def build():
+  local('composer install --no-dev --optimize-autoloader')
   with lcd('web/themes/custom/drupalbristol'):
     local('yarn --pure-lockfile')
     local('./node_modules/.bin/bower install')
