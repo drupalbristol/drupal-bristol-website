@@ -21,6 +21,7 @@ def init():
     run('sudo mkdir -p %s' % project_root)
     run('sudo mkdir -p %s/backups' % project_root)
     run('sudo mkdir -p %s/logs' % project_root)
+    run('sudo mkdir -p %s/tmp' % project_root)
     file_permissions()
 
 def build():
