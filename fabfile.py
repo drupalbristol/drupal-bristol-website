@@ -21,6 +21,7 @@ def init():
     run('sudo mkdir -p %s' % project_root)
     run('sudo mkdir -p %s/backups' % project_root)
     run('sudo mkdir -p %s/logs' % project_root)
+    run('sudo mkdir -p %s/tmp' % project_root)
     file_permissions()
 
 def build():
@@ -41,11 +42,24 @@ def deploy():
 
   run('echo %s > %s/version' % (env.build_number, project_root))
 
+  if not exists('%s/sites/default/files' % drupal_root):
+    run('mkdir %s/sites/default/files' % drupal_root)
+
   if not exists('%s/sites/default/local.settings.php' % drupal_root):
     run('cp %s/sites/example.settings.local.php %s/sites/default/local.settings.php' % (drupal_root, drupal_root))
 
 def file_permissions():
   run('sudo chown -R %s:%s %s' % (env.user, env.group, project_root))
+  run('sudo chown -R %s:%s %s/tmp' % (env.group, env.user, project_root))
+  run("sudo chmod -R u=rwX,g=rX,o= %s" % drupal_root)
+
+  if exists('%s/config/sync' % project_root):
+    run('sudo chown -R %s:%s %s/config/sync' % (env.group, env.user, project_root))
+    run("sudo chmod ug=rwx,o= %s/config/sync" % project_root)
+
+  if exists('%s/sites/default/files' % drupal_root):
+    run('sudo chown -R %s:%s %s/sites/default/files' % (env.group, env.user, drupal_root))
+    run("sudo chmod ug=rwx,o= %s/sites/default/files" % drupal_root)
 
 def post_deploy():
   with cd('%s' % drupal_root):
