@@ -1,4 +1,4 @@
-from fabric.api import task, env, run, local, lcd
+from fabric.api import task, env, run, local, lcd, cd
 from fabric.contrib.files import exists
 from fabric.contrib.project import rsync_project
 
@@ -13,6 +13,7 @@ def build_deploy():
   file_permissions()
   build()
   deploy()
+  post_deploy()
   file_permissions()
 
 def init():
@@ -23,6 +24,7 @@ def init():
     file_permissions()
 
 def build():
+  local('composer install --no-dev --optimize-autoloader')
   with lcd('web/themes/custom/drupalbristol'):
     local('yarn --pure-lockfile')
     local('./node_modules/.bin/bower install')
@@ -44,3 +46,9 @@ def deploy():
 
 def file_permissions():
   run('sudo chown -R %s:%s %s' % (env.user, env.group, project_root))
+
+def post_deploy():
+  with cd('%s' % drupal_root):
+    run('drush -y config-import')
+    run('drush -y updatedb')
+    run('drush cache-rebuild')

@@ -20,8 +20,7 @@ gulp.task('styles', function () {
     }))
     .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.write('.')))
     .pipe(plugins.if(!config.production, plugins.refresh()))
-    .pipe(gulp.dest('css'))
-    .pipe(plugins.notify());
+    .pipe(gulp.dest('css'));
 });
 
 gulp.task('clean', function () {
