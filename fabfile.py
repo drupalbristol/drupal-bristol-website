@@ -42,6 +42,9 @@ def deploy():
 
   run('echo %s > %s/version' % (env.build_number, project_root))
 
+  if not exists('%s/sites/default/files' % drupal_root):
+    run('mkdir %s/sites/default/files' % drupal_root)
+
   if not exists('%s/sites/default/local.settings.php' % drupal_root):
     run('cp %s/sites/example.settings.local.php %s/sites/default/local.settings.php' % (drupal_root, drupal_root))
 
