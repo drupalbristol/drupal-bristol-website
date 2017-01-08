@@ -50,6 +50,16 @@ def deploy():
 
 def file_permissions():
   run('sudo chown -R %s:%s %s' % (env.user, env.group, project_root))
+  run('sudo chown -R %s:%s %s/tmp' % (env.group, env.user, project_root))
+  run("sudo chmod -R u=rwX,g=rX,o= %s" % drupal_root)
+
+  if exists('%s/config/sync' % project_root):
+    run('sudo chown -R %s:%s %s/config/sync' % (env.group, env.user, project_root))
+    run("sudo chmod ug=rwx,o= %s/config/sync" % project_root)
+
+  if exists('%s/sites/default/files' % drupal_root):
+    run('sudo chown -R %s:%s %s/sites/default/files' % (env.group, env.user, drupal_root))
+    run("sudo chmod ug=rwx,o= %s/sites/default/files" % drupal_root)
 
 def post_deploy():
   with cd('%s' % drupal_root):
