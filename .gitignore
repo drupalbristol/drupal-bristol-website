@@ -11,3 +11,5 @@ web/sites/*/files
 
 # Ignore local PHP files.
 local.*.php
+
+fabfile.pyc
