@@ -1,5 +1,7 @@
 <?php
 
+use Dotenv\Dotenv;
+
 /**
  * @file
  * Drupal site-specific configuration file.
@@ -714,3 +716,23 @@ if (file_exists(__DIR__ . '/local.settings.php')) {
 }
 
 $config_directories['sync'] = '../config/sync';
+
+$dotenv = new Dotenv(DRUPAL_ROOT . '/../');
+$dotenv->load();
+$dotenv->required([
+  'APP_ENV', 'APP_NAME', 'APP_URL', 'APP_DEBUG',
+  'DB_CONNECTION', 'DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS'
+]);
+
+$databases['default']['default'] = [
+  'driver' => $_ENV['DB_CONNECTION'],
+  'host' => $_ENV['DB_HOST'],
+  'port' => $_ENV['DB_PORT'],
+  'database' => $_ENV['DB_NAME'],
+  'username' => $_ENV['DB_USER'],
+  'password' => $_ENV['DB_PASS'],
+  'prefix' => '',
+  'collation' => 'utf8mb4_general_ci',
+];
+
+$base_url = $_ENV['APP_URL'];

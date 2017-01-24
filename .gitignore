@@ -13,3 +13,4 @@ web/sites/*/files
 local.*.php
 
 fabfile.pyc
+.env

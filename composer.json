@@ -21,7 +21,8 @@
     "drupal/admin_toolbar": "^1.17",
     "drupal/core": "~8.0",
     "drupal/google_analytics": "^2.0",
-    "drupal/pathauto": "^1.0"
+    "drupal/pathauto": "^1.0",
+    "vlucas/phpdotenv": "^2.4"
   },
   "autoload": {
     "classmap": [
