@@ -725,14 +725,14 @@ $dotenv->required([
 ]);
 
 $databases['default']['default'] = [
-  'driver' => $_ENV['DB_CONNECTION'],
-  'host' => $_ENV['DB_HOST'],
-  'port' => $_ENV['DB_PORT'],
-  'database' => $_ENV['DB_NAME'],
-  'username' => $_ENV['DB_USER'],
-  'password' => $_ENV['DB_PASS'],
+  'driver' => getenv['DB_CONNECTION'],
+  'host' => getenv['DB_HOST'],
+  'port' => getenv['DB_PORT'],
+  'database' => getenv['DB_NAME'],
+  'username' => getenv['DB_USER'],
+  'password' => getenv['DB_PASS'],
   'prefix' => '',
   'collation' => 'utf8mb4_general_ci',
 ];
 
-$base_url = $_ENV['APP_URL'];
+$base_url = getenv['APP_URL'];
