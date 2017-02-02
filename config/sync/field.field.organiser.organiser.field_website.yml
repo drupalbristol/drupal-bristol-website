@@ -1,0 +1,23 @@
+uuid: cb95a540-29d0-4684-861d-b8fa7dc6bd09
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organiser.field_website
+  module:
+    - drupalbristol_organisers
+    - link
+id: organiser.organiser.field_website
+field_name: field_website
+entity_type: organiser
+bundle: organiser
+label: Website
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link

@@ -1,0 +1,27 @@
+# Organiser routing definition
+organiser.settings_tab:
+  route_name: organiser.settings
+  title: 'Settings'
+  base_route: organiser.settings
+
+entity.organiser.canonical:
+  route_name: entity.organiser.canonical
+  base_route: entity.organiser.canonical
+  title: 'View'
+
+entity.organiser.edit_form:
+  route_name: entity.organiser.edit_form
+  base_route: entity.organiser.canonical
+  title: 'Edit'
+
+entity.organiser.version_history:
+  route_name: entity.organiser.version_history
+  base_route: entity.organiser.canonical
+  title: 'Revisions'
+
+entity.organiser.delete_form:
+  route_name:  entity.organiser.delete_form
+  base_route:  entity.organiser.canonical
+  title: Delete
+  weight: 10
+

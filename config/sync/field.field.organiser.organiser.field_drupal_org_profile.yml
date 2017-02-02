@@ -1,0 +1,23 @@
+uuid: 34cb58f8-9550-4317-8c9a-53b40fff7646
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organiser.field_drupal_org_profile
+  module:
+    - drupalbristol_organisers
+    - link
+id: organiser.organiser.field_drupal_org_profile
+field_name: field_drupal_org_profile
+entity_type: organiser
+bundle: organiser
+label: 'Drupal.org profile'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 16
+  title: 0
+field_type: link
