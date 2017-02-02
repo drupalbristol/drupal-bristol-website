@@ -1,0 +1,23 @@
+uuid: f7c16330-c65d-4ded-88f9-c3a7316eefff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.organiser.field_twitter_url
+  module:
+    - drupalbristol_organisers
+    - link
+id: organiser.organiser.field_twitter_url
+field_name: field_twitter_url
+entity_type: organiser
+bundle: organiser
+label: 'Twitter URL'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

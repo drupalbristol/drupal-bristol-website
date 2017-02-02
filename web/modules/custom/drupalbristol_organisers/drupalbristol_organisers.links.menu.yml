@@ -1,0 +1,14 @@
+
+# Organiser menu items definition
+entity.organiser.collection:
+  title: 'Organiser list'
+  route_name: entity.organiser.collection
+  description: 'List Organiser entities'
+  parent: system.admin_structure
+  weight: 100
+
+organiser.admin.structure.settings:
+  title: Organiser settings
+  description: 'Configure Organiser entities'
+  route_name: organiser.settings
+  parent: system.admin_structure

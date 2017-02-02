@@ -1,0 +1,22 @@
+{#
+/**
+ * @file organiser.html.twig
+ * Default theme implementation to present Organiser data.
+ *
+ * This template is used when viewing Organiser pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_organiser()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('organiser') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

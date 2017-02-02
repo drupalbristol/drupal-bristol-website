@@ -1,0 +1,80 @@
+uuid: 028a4673-afff-4da6-8442-b8f11e13aa4a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.organiser.organiser.field_drupal_org_profile
+    - field.field.organiser.organiser.field_image
+    - field.field.organiser.organiser.field_twitter_url
+    - field.field.organiser.organiser.field_website
+    - image.style.thumbnail
+  module:
+    - drupalbristol_organisers
+    - field_group
+    - image
+    - link
+third_party_settings:
+  field_group:
+    group_links:
+      children:
+        - field_website
+        - field_drupal_org_profile
+        - field_twitter_url
+      parent_name: ''
+      weight: 2
+      format_type: fieldset
+      format_settings:
+        id: ''
+        classes: ''
+        description: ''
+        required_fields: true
+      label: Links
+id: organiser.organiser.default
+targetEntityType: organiser
+bundle: organiser
+mode: default
+content:
+  field_drupal_org_profile:
+    weight: 4
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_image:
+    weight: 1
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+  field_twitter_url:
+    weight: 5
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  field_website:
+    weight: 3
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+    type: link_default
+  name:
+    type: string_textfield
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 6
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

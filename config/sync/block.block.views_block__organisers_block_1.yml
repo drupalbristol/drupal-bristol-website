@@ -1,0 +1,24 @@
+uuid: 90fbe57c-b284-4c25-832b-4849f328d28c
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.organisers
+  module:
+    - views
+  theme:
+    - drupalbristol
+id: views_block__organisers_block_1
+theme: drupalbristol
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:organisers-block_1'
+settings:
+  id: 'views_block:organisers-block_1'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility: {  }

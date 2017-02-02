@@ -1,0 +1,5 @@
+entity.organiser.add_form:
+  route_name: entity.organiser.add_form
+  title: 'Add Organiser'
+  appears_on:
+    - entity.organiser.collection

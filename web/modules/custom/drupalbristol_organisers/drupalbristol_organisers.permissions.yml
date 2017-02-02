@@ -1,0 +1,33 @@
+add organiser entities:
+  title: 'Create new Organiser entities'
+
+administer organiser entities:
+  title: 'Administer Organiser entities'
+  description: 'Allow to access the administration form to configure Organiser entities.'
+  restrict access: true
+
+delete organiser entities:
+  title: 'Delete Organiser entities'
+
+edit organiser entities:
+  title: 'Edit Organiser entities'
+
+access organiser overview:
+  title: 'Access the Organiser overview page'
+
+view published organiser entities:
+  title: 'View published Organiser entities'
+
+view unpublished organiser entities:
+  title: 'View unpublished Organiser entities'
+
+view all organiser revisions:
+  title: 'View all Organiser revisions'
+
+revert all organiser revisions:
+  title: 'Revert all Organiser revisions'
+  description: 'Role requires permission <em>view Organiser revisions</em> and <em>edit rights</em> for organiser entities in question or <em>administer organiser entities</em>.'
+
+delete all organiser revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Organiser revisions</em> and <em>delete rights</em> for organiser entities in question or <em>administer organiser entities</em>.'
