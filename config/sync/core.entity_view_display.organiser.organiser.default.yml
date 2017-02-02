@@ -7,6 +7,7 @@ dependencies:
     - field.field.organiser.organiser.field_image
     - field.field.organiser.organiser.field_twitter_url
     - field.field.organiser.organiser.field_website
+    - image.style.thumbnail
   module:
     - drupalbristol_organisers
     - field_group
@@ -45,7 +46,7 @@ content:
     weight: 1
     label: hidden
     settings:
-      image_style: ''
+      image_style: thumbnail
       image_link: ''
     third_party_settings: {  }
     type: image
