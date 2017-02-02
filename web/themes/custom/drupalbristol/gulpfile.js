@@ -6,11 +6,16 @@ var del = require('del');
 
 var config = {
   production: !!plugins.util.env.production,
+  sass: {
+    sourceDir: "sass",
+    pattern: "/**/*.sass",
+    outputDir: "css"
+  },
   sourceMaps: !plugins.util.env.production
 };
 
 gulp.task('styles', function () {
-  gulp.src('sass/main.sass')
+  gulp.src(config.sass.sourceDir + config.sass.pattern)
     .pipe(plugins.plumber())
     .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.init()))
     .pipe(plugins.sassGlob())
@@ -20,19 +25,17 @@ gulp.task('styles', function () {
     }))
     .pipe(plugins.if(config.sourceMaps, plugins.sourcemaps.write('.')))
     .pipe(plugins.if(!config.production, plugins.refresh()))
-    .pipe(gulp.dest('css'));
+    .pipe(gulp.dest(config.sass.outputDir));
 });
 
 gulp.task('clean', function () {
-  del('css');
+  del(config.sass.outputDir);
 });
 
-gulp.task('watch', function () {
+gulp.task('watch', ['default'], function () {
   plugins.refresh.listen();
 
-  gulp.watch('sass/**/*.sass', ['styles']);
+  gulp.watch(config.sass.sourceDir + config.sass.pattern, ['styles']);
 });
 
-gulp.task('build', ['clean', 'styles']);
-
-gulp.task('default', ['build']);
+gulp.task('default', ['clean', 'styles']);
