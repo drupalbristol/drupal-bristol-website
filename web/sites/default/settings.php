@@ -720,7 +720,7 @@ $config_directories['sync'] = '../config/sync';
 $dotenv = new Dotenv(DRUPAL_ROOT . '/../');
 $dotenv->load();
 $dotenv->required([
-  'APP_ENV', 'APP_NAME', 'APP_URL', 'APP_DEBUG',
+  'APP_ENV', 'APP_URL', 'APP_DEBUG',
   'DB_CONNECTION', 'DB_HOST', 'DB_NAME', 'DB_USER', 'DB_PASS'
 ]);
 
