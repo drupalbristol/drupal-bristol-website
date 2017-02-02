@@ -5,6 +5,7 @@ var plugins = require('gulp-load-plugins')();
 var del = require('del');
 
 var config = {
+  fontsDir: 'fonts',
   production: !!plugins.util.env.production,
   sass: {
     sourceDir: "sass",
@@ -44,12 +45,12 @@ gulp.task('styles', function () {
 });
 
 gulp.task('fonts', function() {
-  return app.copy('./vendor/bower/font-awesome/fonts/*', 'fonts');
+  return app.copy('./vendor/bower/font-awesome/fonts/*', config.fontsDir);
 });
 
 gulp.task('clean', function () {
-  del(config.sass.outputDir);
-  del('fonts');
+  del.sync(config.sass.outputDir);
+  del.sync(config.fontsDir);
 });
 
 gulp.task('watch', ['default'], function () {
