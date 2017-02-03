@@ -1,0 +1,32 @@
+uuid: f189fec6-01de-4b08-9ad1-15b00754d08e
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.talks
+  module:
+    - ctools
+    - views
+  theme:
+    - drupalbristol
+id: views_block__talks_block_2
+theme: drupalbristol
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:talks-block_2'
+settings:
+  id: 'views_block:talks-block_2'
+  label: ''
+  provider: views
+  label_display: visible
+  views_label: ''
+  items_per_page: none
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    bundles:
+      event: event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
