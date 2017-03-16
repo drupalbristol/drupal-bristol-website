@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "269e6dfea595f4180a3ae7ac20f5f4f3",
+    "content-hash": "b5e6c0f4e03f47e975a499498fcdcb87",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -663,17 +663,17 @@
         },
         {
             "name": "drupal/admin_toolbar",
-            "version": "1.17.0",
+            "version": "1.18.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/admin_toolbar",
-                "reference": "8.x-1.17"
+                "reference": "8.x-1.18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.17.zip",
-                "reference": "8.x-1.17",
-                "shasum": "030dbb0cf65ae74e8a9c54d0fb2257112c2b16a5"
+                "url": "https://ftp.drupal.org/files/projects/admin_toolbar-8.x-1.18.zip",
+                "reference": "8.x-1.18",
+                "shasum": "ea5b6b5eb20757fda12e7220819a750e2575359b"
             },
             "require": {
                 "drupal/core": "*"
@@ -684,8 +684,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.17",
-                    "datestamp": "1472585039"
+                    "version": "8.x-1.18",
+                    "datestamp": "1480614184"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1093,17 +1093,17 @@
         },
         {
             "name": "drupal/pathauto",
-            "version": "1.0.0-beta1",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/pathauto",
-                "reference": "8.x-1.0-beta1"
+                "reference": "8.x-1.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-beta1.zip",
-                "reference": "8.x-1.0-beta1",
-                "shasum": "0c8756d73d5b1f95419921926e8e55bc0c69e41b"
+                "url": "https://ftp.drupal.org/files/projects/pathauto-8.x-1.0-rc1.zip",
+                "reference": null,
+                "shasum": "2460339ac8739317b3c4e66e9ce7142cc02adac3"
             },
             "require": {
                 "drupal/core": "*",
@@ -1116,8 +1116,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta1",
-                    "datestamp": "1474313339"
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1485702484"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -1150,17 +1150,17 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.0.0-beta2",
+            "version": "1.0.0-rc1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/token",
-                "reference": "8.x-1.0-beta2"
+                "reference": "8.x-1.0-rc1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-beta2.zip",
-                "reference": "8.x-1.0-beta2",
-                "shasum": "b838318eddf46e4f382489de5516ab916257c393"
+                "url": "https://ftp.drupal.org/files/projects/token-8.x-1.0-rc1.zip",
+                "reference": null,
+                "shasum": "204b2f18a3d770589d66656aa83121d2156d0a31"
             },
             "require": {
                 "drupal/core": "~8.0"
@@ -1171,8 +1171,8 @@
                     "dev-1.x": "1.x-dev"
                 },
                 "drupal": {
-                    "version": "8.x-1.0-beta2",
-                    "datestamp": "1474367039"
+                    "version": "8.x-1.0-rc1",
+                    "datestamp": "1483290542"
                 }
             },
             "notification-url": "https://packages.drupal.org/8/downloads",
@@ -3476,7 +3476,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
-        "drupal/field_group": 5
+        "drupal/field_group": 5,
+        "drupal/pathauto": 5
     },
     "prefer-stable": true,
     "prefer-lowest": false,
