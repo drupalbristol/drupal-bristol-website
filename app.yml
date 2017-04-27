@@ -1,5 +1,4 @@
 api: '1'
-type: drupal
 
 drupal:
   config:
