@@ -1,0 +1,27 @@
+api: '1'
+type: drupal
+
+drupal:
+  config:
+    import: yes
+    name: sync
+  root: web
+  theme:
+    build:
+      bower: no
+      npm: no
+      type: gulp
+      yarn: yes
+    path: 'themes/custom/drupalbristol'
+  version: 8
+
+composer:
+  install: true
+
+deploy:
+  restart_php: true
+  restart_webserver: true
+  rsync:
+    options: '-vzcrSLh'
+    delete: yes
+  type: rsync
