@@ -1,26 +1,19 @@
-api: '1'
-
-drupal:
-  config:
-    import: yes
-    name: sync
-  root: web
-  theme:
-    build:
-      bower: no
-      npm: no
-      type: gulp
-      yarn: yes
-    path: 'themes/custom/drupalbristol'
-  version: 8
-
-composer:
-  install: true
+build:
+  type: composer
 
 deploy:
   restart_php: true
   restart_webserver: true
-  rsync:
-    options: '-vzcrSLh'
-    delete: yes
   type: rsync
+
+hooks:
+  build: |
+    cd web/themes/custom/drupalbristol
+    yarn --pure-lockfile
+    node_modules/.bin/bower install
+    node_modules/.bin/gulp --production
+  deploy: |
+    cd web
+    drush -y cache-rebuild
+    drush -y updatedb
+    drush -y config-import
