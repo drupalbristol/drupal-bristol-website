@@ -6,7 +6,7 @@ deploy:
   restart_webserver: true
   type: rsync
 
-hooks:
+commands:
   build: |
     cd web/themes/custom/drupalbristol
     yarn --pure-lockfile
