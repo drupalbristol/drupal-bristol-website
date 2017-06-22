@@ -39,13 +39,13 @@ app.sass = function(sourceFiles, filename) {
 
 gulp.task('styles', function () {
   return app.sass([
-    './vendor/bower/font-awesome/css/font-awesome.css',
+    'node_modules/font-awesome/css/font-awesome.css',
     config.sass.sourceDir + config.sass.pattern
   ], 'main.css');
 });
 
 gulp.task('fonts', function() {
-  return app.copy('./vendor/bower/font-awesome/fonts/*', config.fontsDir);
+  return app.copy('node_modules/font-awesome/fonts/*', config.fontsDir);
 });
 
 gulp.task('clean', function () {

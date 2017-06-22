@@ -23,5 +23,10 @@
     "gulp-sourcemaps": "^1.6.0",
     "gulp-uglify": "^1.5.3",
     "gulp-util": "^3.0.7"
+  },
+  "dependencies": {
+    "breakpoint-sass": "^2.7.1",
+    "font-awesome": "^4.7.0",
+    "susy": "^2.2.12"
   }
 }
