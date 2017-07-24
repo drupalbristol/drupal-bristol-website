@@ -1,0 +1,53 @@
+name: drupalbristol
+type: 'php:7.1'
+
+relationships:
+  database: 'mysqldb:mysql'
+
+disk: 2048
+
+mounts:
+  '/web/sites/default/files': 'shared:files/files'
+  '/tmp': 'shared:files/tmp'
+  '/private': 'shared:files/private'
+  '/drush-backups': 'shared:files/drush-backups'
+
+build:
+  flavor: composer
+
+hooks:
+  deploy: |
+    cd web
+    drush -y cache-rebuild
+    drush -y updatedb
+    drush -y config-import
+    drush -y entup
+
+web:
+  locations:
+    '/':
+      root: 'web'
+      expires: 5m
+      passthru: '/index.php'
+      allow: false
+      rules:
+        '\.(jpe?g|png|gif|svgz?|css|js|map|ico|bmp|eot|woff2?|otf|ttf)$': 
+          allow: true
+        '^/robots\.txt$': 
+          allow: true
+        '^/sitemap\.xml$': 
+          allow: true
+        '/sites/default/files':
+          allow: true
+          expires: 5m
+          passthru: '/index.php'
+          root: 'web/sites/default/files'
+          scripts: false
+          rules:
+            '^/sites/default/files/(css|js)':
+              expires: 2w
+
+crons:
+  drupal:
+  spec: '*/20 * * * *'
+  cmd: 'cd web ; drush core-cron'
