@@ -1,4 +1,4 @@
-name: drupalbristol
+name: 'app'
 type: 'php:7.1'
 
 relationships:
@@ -17,11 +17,11 @@ build:
 
 hooks:
     deploy: |
-        cd web
-        drush -y cache-rebuild
-        drush -y updatedb
-        drush -y config-import
-        drush -y entup
+      cd web
+      drush -y cache-rebuild
+      drush -y updatedb
+      drush -y config-import
+      drush -y entup
 
 web:
     locations:
@@ -37,7 +37,8 @@ web:
                     allow: true
                 '^/sitemap\.xml$':
                     allow: true
-        '^/sites/default/files/(css|js)':
+
+        '/sites/default/files':
             allow: true
             expires: 5m
             passthru: '/index.php'
