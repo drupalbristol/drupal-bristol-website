@@ -2,8 +2,6 @@
 
 $databases = array();
 
-$config_directories['sync'] = '../config/sync';
-
 $settings['hash_salt'] = '';
 $settings['update_free_access'] = FALSE;
 $settings['container_yamls'][] = __DIR__ . '/services.yml';
@@ -12,6 +10,12 @@ $settings['file_scan_ignore_directories'] = [
   'bower_components'
 ];
 
-if (file_exists($file = __DIR__ . '/local.settings.php')) {
-  include $file;
+$config_directories[CONFIG_SYNC_DIRECTORY] = '../config/sync';
+
+if (file_exists($app_root . '/' . $site_path . '/settings.platformsh.php')) {
+  include $app_root . '/' . $site_path . '/settings.platformsh.php';
+}
+
+if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
+  include $app_root . '/' . $site_path . '/settings.local.php';
 }
