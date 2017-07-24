@@ -17,11 +17,11 @@ build:
 
 hooks:
     deploy: |
-      cd web
-      drush -y cache-rebuild
-      drush -y updatedb
-      drush -y config-import
-      drush -y entup
+        cd web
+        drush -y cache-rebuild
+        drush -y updatedb
+        drush -y config-import
+        drush -y entup
 
 web:
     locations:
