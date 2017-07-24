@@ -16,6 +16,11 @@ build:
     flavor: composer
 
 hooks:
+    build : |
+        cd web/themes/custom/drupalbristol
+        npm install
+        node_modules/.bin/gulp --production
+
     deploy: |
         cd web
         drush -y cache-rebuild
