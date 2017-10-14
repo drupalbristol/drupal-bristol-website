@@ -25,6 +25,7 @@
     "drupal/google_analytics": "^2.0",
     "drupal/override_node_options": "^2.1",
     "drupal/pathauto": "^1.0@RC",
+    "drush/drush": "^9",
     "vlucas/phpdotenv": "^2.4"
   },
   "autoload": {
