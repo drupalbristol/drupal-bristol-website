@@ -1,0 +1,49 @@
+.view-speakers {
+  .item-list ul {
+    .ma0;
+    .flex;
+    .flex-wrap;
+  }
+
+  .item-list ul li {
+    .pv0;
+    .ph2;
+    .mb4;
+    .ph3;
+    .tc;
+    .w-50;
+
+    @media @breakpoint-small { .w-33 }
+    @media @breakpoint-large { .w-25 }
+
+    @media @breakpoint-xlarge {
+      width: calc(100% / 6);
+    }
+  }
+
+  .item-list ul li a {
+    .bn;
+    .flex;
+    flex-direction: column-reverse;
+  }
+
+  .node .field--type-image {
+    .fn;
+    .ma0;
+  }
+
+  .view-content img {
+    .ba;
+    .br-100;
+    .b--silver;
+    .mb0;
+    .w-80;
+  }
+
+  @media (min-width: 560px) {
+    .node .field--type-image {
+      .ma0;
+      .fn;
+    }
+  }
+}
