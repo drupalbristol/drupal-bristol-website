@@ -1,12 +1,15 @@
 {
   "config": {
     "lessPath": "./less",
-    "outputCss": "./css"
+    "outputCss": "./css",
+    "outputFonts": "./fonts"
   },
   "scripts": {
-    "build:css": "npm run less",
-    "dev": "npm run build:css && npm-run-all -p watch:css",
-    "less": "lessc --npm-import='prefix=~' $npm_package_config_lessPath/main.less $npm_package_config_outputCss/main.css",
+    "build": "npm run init && npm-run-all -p build:css copy:fonts",
+    "build:css": "lessc --npm-import='prefix=~' $npm_package_config_lessPath/main.less $npm_package_config_outputCss/main.css",
+    "copy:fonts": "cp -R ./node_modules/font-awesome/fonts/* $npm_package_config_outputFonts",
+    "dev": "npm run build && npm-run-all -p watch:css",
+    "init": "mkdir -p $npm_package_config_outputCss $npm_package_config_outputFonts",
     "watch:css": "onchange $npm_package_config_lessPath -v -- npm-run-all -p build:css"
   },
   "dependencies": {
