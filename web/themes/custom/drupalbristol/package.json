@@ -10,6 +10,7 @@
     "copy:fonts": "cp -R ./node_modules/font-awesome/fonts/* $npm_package_config_outputFonts",
     "dev": "npm run build && npm-run-all -p watch:css",
     "init": "mkdir -p $npm_package_config_outputCss $npm_package_config_outputFonts",
+    "prod": "npm run build",
     "watch:css": "onchange $npm_package_config_lessPath -v -- npm-run-all -p build:css"
   },
   "dependencies": {
