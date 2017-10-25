@@ -7,7 +7,31 @@ vendor/
 /web/profiles/contrib/
 /web/libraries/
 
+# Ignore files added by Drupal Scaffold.
+/web/.csslintrc
+/web/.editorconfig
+/web/.eslintignore
+/web/.eslintrc
+/web/.eslintrc.json
+/web/.gitattributes
+/web/.htaccess
+/web/autoload.php
+/web/index.php
+/web/robots.txt
+/web/sites/default/default.settings.php
+/web/sites/default/default.services.yml
+/web/sites/development.services.yml
+/web/sites/example.settings.local.php
+/web/sites/example.sites.php
+/web/update.php
+/web/web.config
+
+/web/sites/default/files/
+
+/web/sites/simpletest/
+
 # Ignore local PHP files.
 local.*.php
+*.local.php
 
 .env
