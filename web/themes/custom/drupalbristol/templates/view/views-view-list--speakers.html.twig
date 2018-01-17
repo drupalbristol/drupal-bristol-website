@@ -1,0 +1,38 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a view template to display a list of rows.
+ *
+ * Available variables:
+ * - attributes: HTML attributes for the container.
+ * - rows: A list of rows for this list.
+ *   - attributes: The row's HTML attributes.
+ *   - content: The row's contents.
+ * - title: The title of this group of rows. May be empty.
+ * - list: @todo.
+ *   - type: Starting tag will be either a ul or ol.
+ *   - attributes: HTML attributes for the list element.
+ *
+ * @see template_preprocess_views_view_list()
+ *
+ * @ingroup themeable
+ */
+#}
+{% if attributes -%}
+  <div{{ attributes }}>
+{% endif %}
+  {% if title %}
+    <h3>{{ title }}</h3>
+  {% endif %}
+
+  <{{ list.type }} class="tw-flex tw-flex-wrap">
+    {% for row in rows %}
+      <li{{ row.attributes.addClass('tw-w-1/3 md:tw-w-1/4 lg:tw-w-1/6 tw-p-0 tw-m-0 tw-text-center') }}>
+        {{ row.content }}
+      </li>
+    {% endfor %}
+  </{{ list.type }}>
+
+{% if attributes -%}
+  </div>
+{% endif %}

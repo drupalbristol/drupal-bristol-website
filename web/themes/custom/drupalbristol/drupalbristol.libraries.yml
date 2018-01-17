@@ -1,4 +1,4 @@
 global-styling:
   css:
     base:
-      css/main.css: {}
+      build/css/site.css: {}
