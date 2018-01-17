@@ -41,10 +41,10 @@
 
 {% if label_hidden %}
   {% if multiple %}
-    <div{{ attributes }}>
+    <div{{ attributes.addClass('tw-mr-1') }}>
       {% for item in items %}
         <div{{ item.attributes }}>
-        <a href="{{ item.content }}">
+        <a href="{{ item.content }}" class="tw-border-0">
           <i class="fa fa-drupal"></i>
         </a>
         </div>
@@ -52,22 +52,23 @@
     </div>
   {% else %}
     {% for item in items %}
-      <div{{ attributes }}>
-      <a href="{{ item.content }}">
+      <div{{ attributes.addClass('tw-mr-1') }}>
+      <a href="{{ item.content }}" class="tw-border-0">
         <i class="fa fa-drupal"></i>
       </a>
       </div>
     {% endfor %}
   {% endif %}
 {% else %}
-  <div{{ attributes }}>
+  <div{{ attributes.addClass('tw-mr-1') }}>
+
     <div{{ title_attributes }}>{{ label }}</div>
     {% if multiple %}
       <div>
     {% endif %}
     {% for item in items %}
       <div{{ item.attributes }}>
-      <a href="{{ item.content }}">
+      <a href="{{ item.content }}" class="tw-border-0">
         <i class="fa fa-drupal"></i>
       </a>
       </div>

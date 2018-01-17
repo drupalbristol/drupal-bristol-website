@@ -1,5 +1,4 @@
-css/
-fonts/
+build/
 node_modules/
 vendor/
 *.map

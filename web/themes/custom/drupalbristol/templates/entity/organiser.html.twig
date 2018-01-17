@@ -1,0 +1,34 @@
+{#
+/**
+ * @file organiser.html.twig
+ * Default theme implementation to present Organiser data.
+ *
+ * This template is used when viewing Organiser pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_organiser()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('organiser') }}>
+  <div class="tw-flex tw-flex-row-reverse">
+    <div class="tw-flex-grow">
+      <div class="tw-mb-1">{{ content.name }}</div>
+
+      <div class="tw-flex">
+        {{ content.field_website }}
+        {{ content.field_drupal_org_profile }}
+        {{ content.field_twitter_url }}
+      </div>
+    </div>
+
+    <div class="tw-w-1/5 tw-flex-none tw-mr-2">
+      {{ content.field_image }}
+    </div>
+  </div>
+</div>

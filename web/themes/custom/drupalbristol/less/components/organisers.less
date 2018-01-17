@@ -1,35 +1,12 @@
-.view-organisers {
-  .item-list ul li {
-    .pa0;
-    .mb3;
-    .relative;
-    min-height: 52px;
-
-    &:last-child { .mb0 }
-  }
-
-  li > * { .dib }
-
-  img {
-    .ba;
-    .br-100;
-    .b--silver;
-    .absolute;
-    height: 50px;
-    left: 0;
-    top: 0;
-    width: 50px;
-  }
-
-  a { .bn }
-
-  .field--name-name {
-    .db;
-    .mb1;
-  }
-
-  .field--name-name,
-  li > *:nth-child(3) {
-    .ml5;
-  }
+.view-organisers .field--type-image img {
+  @apply .tw-border;
+  @apply .tw-border-grey-light;
+  @apply .tw-border-solid;
+  @apply .tw-mb-2;
+  @apply .tw-mt-0;
+  @apply .tw-mx-auto;
+  @apply .tw-my-0;
+  @apply .tw-rounded-full;
+  @apply .tw-shadow;
+  @apply .tw-w-4/5;
 }
