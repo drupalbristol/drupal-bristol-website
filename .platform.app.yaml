@@ -16,10 +16,10 @@ build:
     flavor: composer
 
 hooks:
-    # build : |
-    #     cd web/themes/custom/drupalbristol
-    #     npm install
-    #     './node_modules/.bin/encore production'
+    build : |
+        cd web/themes/custom/drupalbristol
+        npm install
+        './node_modules/.bin/encore production'
 
     deploy: |
         cd web
