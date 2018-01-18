@@ -19,7 +19,7 @@ hooks:
     build : |
         cd web/themes/custom/drupalbristol
         npm install
-        npm run prod
+        './node_modules/.bin/encore production'
 
     deploy: |
         cd web
