@@ -80,7 +80,7 @@ class OrganiserRevisionRevertForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function getCancelUrl() {
-    return new Url('entity.organiser.version_history', array('organiser' => $this->revision->id()));
+    return new Url('entity.organiser.version_history', ['organiser' => $this->revision->id()]);
   }
 
   /**
@@ -123,7 +123,7 @@ class OrganiserRevisionRevertForm extends ConfirmFormBase {
     drupal_set_message(t('Organiser %title has been reverted to the revision from %revision-date.', ['%title' => $this->revision->label(), '%revision-date' => $this->dateFormatter->format($original_revision_timestamp)]));
     $form_state->setRedirect(
       'entity.organiser.version_history',
-      array('organiser' => $this->revision->id())
+      ['organiser' => $this->revision->id()]
     );
   }
 

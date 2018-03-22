@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\SponsorEntityTypeListBuilder.
- */
-
 namespace Drupal\drupalbristol_sponsors;
 
 use Drupal\Core\Config\Entity\ConfigEntityListBuilder;
@@ -14,6 +9,7 @@ use Drupal\Core\Entity\EntityInterface;
  * Provides a listing of Sponsor type entities.
  */
 class SponsorEntityTypeListBuilder extends ConfigEntityListBuilder {
+
   /**
    * {@inheritdoc}
    */

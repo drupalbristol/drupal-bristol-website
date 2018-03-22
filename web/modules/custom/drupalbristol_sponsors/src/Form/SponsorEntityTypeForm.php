@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\Form\SponsorEntityTypeForm.
- */
-
 namespace Drupal\drupalbristol_sponsors\Form;
 
 use Drupal\Core\Entity\EntityForm;
@@ -16,6 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
  * @package Drupal\drupalbristol_sponsors\Form
  */
 class SponsorEntityTypeForm extends EntityForm {
+
   /**
    * {@inheritdoc}
    */
@@ -23,23 +19,23 @@ class SponsorEntityTypeForm extends EntityForm {
     $form = parent::form($form, $form_state);
 
     $sponsor_type = $this->entity;
-    $form['label'] = array(
+    $form['label'] = [
       '#type' => 'textfield',
       '#title' => $this->t('Label'),
       '#maxlength' => 255,
       '#default_value' => $sponsor_type->label(),
       '#description' => $this->t("Label for the Sponsor type."),
       '#required' => TRUE,
-    );
+    ];
 
-    $form['id'] = array(
+    $form['id'] = [
       '#type' => 'machine_name',
       '#default_value' => $sponsor_type->id(),
-      '#machine_name' => array(
+      '#machine_name' => [
         'exists' => '\Drupal\drupalbristol_sponsors\Entity\SponsorEntityType::load',
-      ),
+      ],
       '#disabled' => !$sponsor_type->isNew(),
-    );
+    ];
 
     /* You will need additional form elements for your custom properties. */
 

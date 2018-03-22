@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\Form\SponsorEntityDeleteForm.
- */
-
 namespace Drupal\drupalbristol_sponsors\Form;
 
 use Drupal\Core\Entity\ContentEntityDeleteForm;

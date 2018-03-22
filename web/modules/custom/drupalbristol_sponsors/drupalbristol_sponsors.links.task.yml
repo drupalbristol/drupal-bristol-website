@@ -14,4 +14,3 @@ entity.sponsor.delete_form:
   base_route:  entity.sponsor.canonical
   title: Delete
   weight: 10
-

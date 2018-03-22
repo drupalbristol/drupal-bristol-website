@@ -24,4 +24,3 @@ entity.organiser.delete_form:
   base_route:  entity.organiser.canonical
   title: Delete
   weight: 10
-

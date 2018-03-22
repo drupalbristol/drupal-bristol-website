@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\Form\SponsorEntitySettingsForm.
- */
-
 namespace Drupal\drupalbristol_sponsors\Form;
 
 use Drupal\Core\Form\FormBase;
@@ -18,6 +13,7 @@ use Drupal\Core\Form\FormStateInterface;
  * @ingroup drupalbristol_sponsors
  */
 class SponsorEntitySettingsForm extends FormBase {
+
   /**
    * Returns a unique string identifying the form.
    *
@@ -39,7 +35,6 @@ class SponsorEntitySettingsForm extends FormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     // Empty implementation of the abstract submit class.
   }
-
 
   /**
    * Defines the settings form for Sponsor entities.

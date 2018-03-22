@@ -13,4 +13,3 @@ entity.sponsor_type.collection:
   description: 'List Sponsor type (bundles)'
   parent: system.admin_structure
   weight: 99
-

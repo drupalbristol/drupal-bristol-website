@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\SponsorEntityAccessControlHandler.
- */
-
 namespace Drupal\drupalbristol_sponsors;
 
 use Drupal\Core\Entity\EntityAccessControlHandler;
@@ -18,6 +13,7 @@ use Drupal\Core\Access\AccessResult;
  * @see \Drupal\drupalbristol_sponsors\Entity\SponsorEntity.
  */
 class SponsorEntityAccessControlHandler extends EntityAccessControlHandler {
+
   /**
    * {@inheritdoc}
    */

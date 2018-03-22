@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\Form\SponsorEntityForm.
- */
-
 namespace Drupal\drupalbristol_sponsors\Form;
 
 use Drupal\Core\Entity\ContentEntityForm;
@@ -16,6 +11,7 @@ use Drupal\Core\Form\FormStateInterface;
  * @ingroup drupalbristol_sponsors
  */
 class SponsorEntityForm extends ContentEntityForm {
+
   /**
    * {@inheritdoc}
    */

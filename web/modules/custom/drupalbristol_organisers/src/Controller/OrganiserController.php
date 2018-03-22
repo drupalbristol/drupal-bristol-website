@@ -44,7 +44,7 @@ class OrganiserController extends ControllerBase implements ContainerInjectionIn
    */
   public function revisionPageTitle($organiser_revision) {
     $organiser = $this->entityManager()->getStorage('organiser')->loadRevision($organiser_revision);
-    return $this->t('Revision of %title from %date', array('%title' => $organiser->label(), '%date' => format_date($organiser->getRevisionCreationTime())));
+    return $this->t('Revision of %title from %date', ['%title' => $organiser->label(), '%date' => format_date($organiser->getRevisionCreationTime())]);
   }
 
   /**
@@ -65,12 +65,12 @@ class OrganiserController extends ControllerBase implements ContainerInjectionIn
     $organiser_storage = $this->entityManager()->getStorage('organiser');
 
     $build['#title'] = $has_translations ? $this->t('@langname revisions for %title', ['@langname' => $langname, '%title' => $organiser->label()]) : $this->t('Revisions for %title', ['%title' => $organiser->label()]);
-    $header = array($this->t('Revision'), $this->t('Operations'));
+    $header = [$this->t('Revision'), $this->t('Operations')];
 
     $revert_permission = (($account->hasPermission("revert all organiser revisions") || $account->hasPermission('administer organiser entities')));
     $delete_permission = (($account->hasPermission("delete all organiser revisions") || $account->hasPermission('administer organiser entities')));
 
-    $rows = array();
+    $rows = [];
 
     $vids = $organiser_storage->revisionIds($organiser);
 
@@ -153,11 +153,11 @@ class OrganiserController extends ControllerBase implements ContainerInjectionIn
       }
     }
 
-    $build['organiser_revisions_table'] = array(
+    $build['organiser_revisions_table'] = [
       '#theme' => 'table',
       '#rows' => $rows,
       '#header' => $header,
-    );
+    ];
 
     return $build;
   }

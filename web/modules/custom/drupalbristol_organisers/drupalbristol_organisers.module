@@ -1,6 +1,10 @@
 <?php
 
 /**
+ * @file
+ */
+
+/**
  * Implements hook_theme().
  */
 function drupalbristol_organisers_theme($existing, $type, $theme, $path) {
@@ -14,10 +18,10 @@ function drupalbristol_organisers_theme($existing, $type, $theme, $path) {
 }
 
 /**
-* Implements hook_theme_suggestions_HOOK().
-*/
+ * Implements hook_theme_suggestions_HOOK().
+ */
 function drupalbristol_organisers_theme_suggestions_organiser(array $variables) {
-  $suggestions = array();
+  $suggestions = [];
   $entity = $variables['elements']['#organiser'];
   $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
 

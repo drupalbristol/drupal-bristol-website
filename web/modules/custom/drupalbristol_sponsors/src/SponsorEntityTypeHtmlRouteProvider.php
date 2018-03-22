@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\SponsorEntityTypeHtmlRouteProvider.
- */
-
 namespace Drupal\drupalbristol_sponsors;
 
 use Drupal\Core\Entity\EntityTypeInterface;
@@ -18,6 +13,7 @@ use Symfony\Component\Routing\Route;
  * @see Drupal\Core\Entity\Routing\DefaultHtmlRouteProvider
  */
 class SponsorEntityTypeHtmlRouteProvider extends AdminHtmlRouteProvider {
+
   /**
    * {@inheritdoc}
    */

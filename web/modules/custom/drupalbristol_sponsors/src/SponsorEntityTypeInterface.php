@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\SponsorEntityTypeInterface.
- */
-
 namespace Drupal\drupalbristol_sponsors;
 
 use Drupal\Core\Config\Entity\ConfigEntityInterface;

@@ -42,10 +42,10 @@ function drupalbristol_sponsors_theme() {
 }
 
 /**
-* Implements hook_theme_suggestions_HOOK().
-*/
+ * Implements hook_theme_suggestions_HOOK().
+ */
 function drupalbristol_sponsors_theme_suggestions_sponsor(array $variables) {
-  $suggestions = array();
+  $suggestions = [];
   $entity = $variables['elements']['#sponsor'];
   $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
 

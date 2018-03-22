@@ -73,14 +73,14 @@ class OrganiserRevisionDeleteForm extends ConfirmFormBase {
    * {@inheritdoc}
    */
   public function getQuestion() {
-    return t('Are you sure you want to delete the revision from %revision-date?', array('%revision-date' => format_date($this->revision->getRevisionCreationTime())));
+    return t('Are you sure you want to delete the revision from %revision-date?', ['%revision-date' => format_date($this->revision->getRevisionCreationTime())]);
   }
 
   /**
    * {@inheritdoc}
    */
   public function getCancelUrl() {
-    return new Url('entity.organiser.version_history', array('organiser' => $this->revision->id()));
+    return new Url('entity.organiser.version_history', ['organiser' => $this->revision->id()]);
   }
 
   /**
@@ -106,16 +106,16 @@ class OrganiserRevisionDeleteForm extends ConfirmFormBase {
   public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->OrganiserStorage->deleteRevision($this->revision->getRevisionId());
 
-    $this->logger('content')->notice('Organiser: deleted %title revision %revision.', array('%title' => $this->revision->label(), '%revision' => $this->revision->getRevisionId()));
-    drupal_set_message(t('Revision from %revision-date of Organiser %title has been deleted.', array('%revision-date' => format_date($this->revision->getRevisionCreationTime()), '%title' => $this->revision->label())));
+    $this->logger('content')->notice('Organiser: deleted %title revision %revision.', ['%title' => $this->revision->label(), '%revision' => $this->revision->getRevisionId()]);
+    drupal_set_message(t('Revision from %revision-date of Organiser %title has been deleted.', ['%revision-date' => format_date($this->revision->getRevisionCreationTime()), '%title' => $this->revision->label()]));
     $form_state->setRedirect(
       'entity.organiser.canonical',
-       array('organiser' => $this->revision->id())
+       ['organiser' => $this->revision->id()]
     );
-    if ($this->connection->query('SELECT COUNT(DISTINCT vid) FROM {organiser_field_revision} WHERE id = :id', array(':id' => $this->revision->id()))->fetchField() > 1) {
+    if ($this->connection->query('SELECT COUNT(DISTINCT vid) FROM {organiser_field_revision} WHERE id = :id', [':id' => $this->revision->id()])->fetchField() > 1) {
       $form_state->setRedirect(
         'entity.organiser.version_history',
-         array('organiser' => $this->revision->id())
+         ['organiser' => $this->revision->id()]
       );
     }
   }

@@ -34,9 +34,9 @@ class OrganiserListBuilder extends EntityListBuilder {
     $row['name'] = $this->l(
       $entity->label(),
       new Url(
-        'entity.organiser.edit_form', array(
+        'entity.organiser.edit_form', [
           'organiser' => $entity->id(),
-        )
+        ]
       )
     );
     return $row + parent::buildRow($entity);

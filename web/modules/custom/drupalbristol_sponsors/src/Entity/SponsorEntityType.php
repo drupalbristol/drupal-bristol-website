@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\Entity\SponsorEntityType.
- */
-
 namespace Drupal\drupalbristol_sponsors\Entity;
 
 use Drupal\Core\Config\Entity\ConfigEntityBundleBase;

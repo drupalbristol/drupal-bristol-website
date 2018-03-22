@@ -20,12 +20,12 @@ class OrganiserForm extends ContentEntityForm {
     $form = parent::buildForm($form, $form_state);
 
     if (!$this->entity->isNew()) {
-      $form['new_revision'] = array(
+      $form['new_revision'] = [
         '#type' => 'checkbox',
         '#title' => $this->t('Create new revision'),
         '#default_value' => FALSE,
         '#weight' => 10,
-      );
+      ];
     }
 
     $entity = $this->entity;

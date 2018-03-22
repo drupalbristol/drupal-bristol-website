@@ -78,11 +78,11 @@ class OrganiserRevisionRevertTranslationForm extends OrganiserRevisionRevertForm
     $this->langcode = $langcode;
     $form = parent::buildForm($form, $form_state, $organiser_revision);
 
-    $form['revert_untranslated_fields'] = array(
+    $form['revert_untranslated_fields'] = [
       '#type' => 'checkbox',
       '#title' => $this->t('Revert content shared among translations'),
       '#default_value' => FALSE,
-    );
+    ];
 
     return $form;
   }

@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\SponsorEntityListBuilder.
- */
-
 namespace Drupal\drupalbristol_sponsors;
 
 use Drupal\Core\Entity\EntityInterface;
@@ -19,6 +14,7 @@ use Drupal\Core\Url;
  */
 class SponsorEntityListBuilder extends EntityListBuilder {
   use LinkGeneratorTrait;
+
   /**
    * {@inheritdoc}
    */
@@ -37,9 +33,9 @@ class SponsorEntityListBuilder extends EntityListBuilder {
     $row['name'] = $this->l(
       $entity->label(),
       new Url(
-        'entity.sponsor.edit_form', array(
+        'entity.sponsor.edit_form', [
           'sponsor' => $entity->id(),
-        )
+        ]
       )
     );
     return $row + parent::buildRow($entity);
