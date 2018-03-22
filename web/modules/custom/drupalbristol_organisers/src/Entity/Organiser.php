@@ -94,8 +94,8 @@ class Organiser extends RevisionableContentEntityBase implements OrganiserInterf
       }
     }
 
-    // If no revision author has been set explicitly, make the organiser owner the
-    // revision author.
+    // If no revision author has been set explicitly, make the organiser owner
+    // the revision author.
     if (!$this->getRevisionUser()) {
       $this->setRevisionUserId($this->getOwnerId());
     }

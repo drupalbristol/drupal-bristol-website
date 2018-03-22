@@ -4,8 +4,6 @@ namespace Drupal\drupalbristol_organisers\Entity;
 
 use Drupal\Core\Entity\RevisionLogInterface;
 use Drupal\Core\Entity\RevisionableInterface;
-use Drupal\Component\Utility\Xss;
-use Drupal\Core\Url;
 use Drupal\Core\Entity\EntityChangedInterface;
 use Drupal\user\EntityOwnerInterface;
 
@@ -15,8 +13,6 @@ use Drupal\user\EntityOwnerInterface;
  * @ingroup drupalbristol_organisers
  */
 interface OrganiserInterface extends RevisionableInterface, RevisionLogInterface, EntityChangedInterface, EntityOwnerInterface {
-
-  // Add get/set methods for your configuration properties here.
 
   /**
    * Gets the Organiser name.
