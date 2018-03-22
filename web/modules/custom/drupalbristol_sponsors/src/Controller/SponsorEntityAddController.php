@@ -20,7 +20,9 @@ class SponsorEntityAddController extends ControllerBase {
    * SponsorEntityAddController constructor.
    *
    * @param \Drupal\Core\Entity\EntityStorageInterface $storage
+   *   Sponsor entity storage.
    * @param \Drupal\Core\Entity\EntityStorageInterface $type_storage
+   *   Sponsor type entity storage.
    */
   public function __construct(EntityStorageInterface $storage, EntityStorageInterface $type_storage) {
     $this->storage = $storage;
