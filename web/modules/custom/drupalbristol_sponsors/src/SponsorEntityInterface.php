@@ -1,10 +1,5 @@
 <?php
 
-/**
- * @file
- * Contains \Drupal\drupalbristol_sponsors\SponsorEntityInterface.
- */
-
 namespace Drupal\drupalbristol_sponsors;
 
 use Drupal\Core\Entity\ContentEntityInterface;
@@ -17,7 +12,7 @@ use Drupal\user\EntityOwnerInterface;
  * @ingroup drupalbristol_sponsors
  */
 interface SponsorEntityInterface extends ContentEntityInterface, EntityChangedInterface, EntityOwnerInterface {
-  // Add get/set methods for your configuration properties here.
+
   /**
    * Gets the Sponsor type.
    *

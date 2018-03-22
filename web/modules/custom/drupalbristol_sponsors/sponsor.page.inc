@@ -40,7 +40,7 @@ function template_preprocess_sponsor(array &$variables) {
  *
  * @see block_content_add_page()
  */
-function template_preprocess_sponsor_content_add_list(&$variables) {
+function template_preprocess_sponsor_content_add_list(array &$variables) {
   $variables['types'] = [];
   $query = \Drupal::request()->query->all();
   foreach ($variables['content'] as $type) {

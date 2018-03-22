@@ -16,7 +16,6 @@ function drupalbristol_sponsors_help($route_name, RouteMatchInterface $route_mat
     case 'help.page.drupalbristol_sponsors':
       $output = '';
       $output .= '<h3>' . t('About') . '</h3>';
-      $output .= '<p>' . t('') . '</p>';
       return $output;
 
     default:

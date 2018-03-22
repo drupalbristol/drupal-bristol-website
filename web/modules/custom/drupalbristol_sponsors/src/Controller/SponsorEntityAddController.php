@@ -16,9 +16,6 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class SponsorEntityAddController extends ControllerBase {
 
-  /**
-   *
-   */
   public function __construct(EntityStorageInterface $storage, EntityStorageInterface $type_storage) {
     $this->storage = $storage;
     $this->typeStorage = $type_storage;
@@ -43,8 +40,9 @@ class SponsorEntityAddController extends ControllerBase {
    *   The current request object.
    *
    * @return array
-   *   A render array for a list of the sponsor bundles/types that can be added or
-   *   if there is only one type/bunlde defined for the site, the function returns the add page for that bundle/type.
+   *   A render array for a list of the sponsor bundles/types that can be added
+   *   or if there is only one type/bunlde defined for the site, the function
+   *   returns the add page for that bundle/type.
    */
   public function add(Request $request) {
     $types = $this->typeStorage->loadMultiple();
