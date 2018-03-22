@@ -16,6 +16,12 @@ use Symfony\Component\HttpFoundation\Request;
  */
 class SponsorEntityAddController extends ControllerBase {
 
+  /**
+   * SponsorEntityAddController constructor.
+   *
+   * @param \Drupal\Core\Entity\EntityStorageInterface $storage
+   * @param \Drupal\Core\Entity\EntityStorageInterface $type_storage
+   */
   public function __construct(EntityStorageInterface $storage, EntityStorageInterface $type_storage) {
     $this->storage = $storage;
     $this->typeStorage = $type_storage;

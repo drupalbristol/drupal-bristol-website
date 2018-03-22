@@ -132,7 +132,7 @@ class OrganiserController extends ControllerBase implements ContainerInjectionIn
               Url::fromRoute('organiser.revision_revert_translation_confirm', [
                 'organiser' => $organiser->id(),
                 'organiser_revision' => $vid,
-                'langcode' => $langcode
+                'langcode' => $langcode,
               ]) :
               Url::fromRoute('organiser.revision_revert_confirm', ['organiser' => $organiser->id(), 'organiser_revision' => $vid]),
             ];
