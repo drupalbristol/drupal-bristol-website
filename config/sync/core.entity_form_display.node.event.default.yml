@@ -13,6 +13,8 @@ dependencies:
     - link
     - path
     - text
+_core:
+  default_config_hash: dnLMRAAIFghnEfSDzJg40K9CmB0mVpxxFAQTp3c20XM
 id: node.event.default
 targetEntityType: node
 bundle: event

@@ -8,15 +8,19 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_update: 0
   contact: 0
   contextual: 0
   ctools: 0
   datetime: 0
   dblog: 0
+  drupalbristol_events: 0
   drupalbristol_organisers: 0
   drupalbristol_sponsors: 0
   dynamic_page_cache: 0
   editor: 0
+  features: 0
+  features_ui: 0
   field: 0
   field_group: 0
   field_ui: 0

@@ -4,6 +4,8 @@ status: true
 dependencies:
   module:
     - node
+_core:
+  default_config_hash: 6NyRZSupVQqdOnY4t-UFFzFoWRs7Wm9YXQqvJwMIcl4
 id: node.field_event
 field_name: field_event
 entity_type: node

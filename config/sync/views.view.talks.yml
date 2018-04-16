@@ -11,6 +11,8 @@ dependencies:
     - datetime
     - node
     - user
+_core:
+  default_config_hash: ntuWvxiNMJWz6Cy5nDpDVPtChoQIPvlzgzz9ZSFn6qw
 id: talks
 label: Talks
 module: views

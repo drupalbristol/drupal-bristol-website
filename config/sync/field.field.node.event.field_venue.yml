@@ -6,6 +6,8 @@ dependencies:
     - field.storage.node.field_venue
     - node.type.event
     - taxonomy.vocabulary.venues
+_core:
+  default_config_hash: 1akEh6Q-n8l-pMUvISyMYuT5JIbPiGdLDyK8VDA7nMM
 id: node.event.field_venue
 field_name: field_venue
 entity_type: node

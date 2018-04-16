@@ -5,6 +5,8 @@ dependencies:
   module:
     - node
     - taxonomy
+_core:
+  default_config_hash: cXUl3YXo4GR4wXC50mpZbkCod8_cN6vrkkH2q1_EstY
 id: node.field_venue
 field_name: field_venue
 entity_type: node

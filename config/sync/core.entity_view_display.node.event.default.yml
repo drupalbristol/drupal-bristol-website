@@ -13,6 +13,8 @@ dependencies:
     - link
     - text
     - user
+_core:
+  default_config_hash: tSB_N5boTEJVtG-giH9D1C_Apt9N7Y-7-2UARclnBs0
 id: node.event.default
 targetEntityType: node
 bundle: event

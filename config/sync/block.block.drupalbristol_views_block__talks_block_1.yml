@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - drupalbristol
+_core:
+  default_config_hash: b957LyOgw2LF4ZHSNydpD_8CH1I3mIsG6PbBkU5jtI0
 id: drupalbristol_views_block__talks_block_1
 theme: drupalbristol
 region: content

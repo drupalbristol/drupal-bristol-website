@@ -10,6 +10,8 @@ dependencies:
     - datetime
     - node
     - user
+_core:
+  default_config_hash: CJF7YC6HI33tCOzXeafA3fnDsJj8V16dcn19LvsMG2E
 id: events
 label: Events
 module: views

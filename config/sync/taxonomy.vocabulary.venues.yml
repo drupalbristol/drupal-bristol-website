@@ -2,6 +2,8 @@ uuid: 8b082e54-1918-45db-be00-d587ecec8de8
 langcode: en
 status: true
 dependencies: {  }
+_core:
+  default_config_hash: Dth4XTvAl7Gjnz058Trynf11uk5F8p9sJekYV-Vsbd4
 name: Venues
 vid: venues
 description: ''

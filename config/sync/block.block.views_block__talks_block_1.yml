@@ -9,6 +9,8 @@ dependencies:
     - views
   theme:
     - bartik
+_core:
+  default_config_hash: ebT_q8brf1Ta3O_lqS5qa12Y3k3HYfodJ8yiOJm4uEg
 id: views_block__talks_block_1
 theme: bartik
 region: sidebar_second
