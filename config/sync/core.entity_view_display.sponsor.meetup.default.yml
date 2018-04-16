@@ -25,6 +25,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
   field_website:
     type: link
     weight: 2
@@ -36,6 +37,7 @@ content:
       rel: '0'
       target: '0'
     third_party_settings: {  }
+    region: content
   name:
     label: hidden
     type: string
@@ -43,6 +45,7 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden:
   field_end_date: true
   field_start_date: true

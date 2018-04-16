@@ -12,7 +12,7 @@ _core:
   default_config_hash: kkISXE1LT2FJEoYnqCrCpeFB-2pmGmMxMklVk7rQcfg
 id: drupalbristol_footer
 theme: drupalbristol
-region: '-1'
+region: header
 weight: -10
 provider: null
 plugin: 'system_menu_block:footer'

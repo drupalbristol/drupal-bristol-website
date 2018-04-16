@@ -3,21 +3,20 @@ langcode: en
 status: true
 dependencies:
   module:
-    - ctools
     - node
 id: talk_nodes
-label: 'Talk nodes'
+label: Talks
 type: 'canonical_entities:node'
 pattern: 'talks/[node:title]'
 selection_criteria:
-  7dd2e0e2-d839-4e32-9f06-064c309f7714:
+  cccdc636-a819-4709-ac0d-6b3532c40219:
     id: node_type
     bundles:
       talk: talk
     negate: false
     context_mapping:
       node: node
-    uuid: 7dd2e0e2-d839-4e32-9f06-064c309f7714
+    uuid: cccdc636-a819-4709-ac0d-6b3532c40219
 selection_logic: and
 weight: -5
 relationships: {  }

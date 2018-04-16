@@ -42,6 +42,7 @@ content:
       rel: '0'
     third_party_settings: {  }
     type: link
+    region: content
   field_image:
     weight: 1
     label: hidden
@@ -50,6 +51,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
   field_twitter_url:
     weight: 4
     label: hidden
@@ -61,6 +63,7 @@ content:
       rel: '0'
     third_party_settings: {  }
     type: link
+    region: content
   field_website:
     weight: 2
     label: hidden
@@ -72,6 +75,7 @@ content:
       rel: '0'
     third_party_settings: {  }
     type: link
+    region: content
   name:
     label: visually_hidden
     type: string
@@ -79,5 +83,6 @@ content:
     settings:
       link_to_entity: false
     third_party_settings: {  }
+    region: content
 hidden:
   user_id: true

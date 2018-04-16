@@ -27,6 +27,7 @@ content:
     weight: 2
     settings: {  }
     third_party_settings: {  }
+    region: content
   field_drupalorg_url:
     weight: 4
     label: inline
@@ -38,6 +39,7 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
   field_image:
     weight: 0
     label: hidden
@@ -46,6 +48,7 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
+    region: content
   field_tagline:
     weight: 1
     label: hidden
@@ -53,6 +56,7 @@ content:
       trim_length: 600
     third_party_settings: {  }
     type: text_trimmed
+    region: content
   field_twitter:
     weight: 5
     label: inline
@@ -60,6 +64,7 @@ content:
       link_to_entity: false
     third_party_settings: {  }
     type: string
+    region: content
   field_website:
     weight: 6
     label: inline
@@ -71,8 +76,10 @@ content:
       target: ''
     third_party_settings: {  }
     type: link
+    region: content
   links:
     weight: 3
     settings: {  }
     third_party_settings: {  }
+    region: content
 hidden: {  }

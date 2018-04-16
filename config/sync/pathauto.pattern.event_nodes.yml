@@ -3,21 +3,20 @@ langcode: en
 status: true
 dependencies:
   module:
-    - ctools
     - node
 id: event_nodes
-label: 'Event nodes'
+label: Events
 type: 'canonical_entities:node'
 pattern: 'events/[node:field_date]/[node:title]'
 selection_criteria:
-  d41211cb-5b7d-48df-8c00-d8b40c88cfac:
+  9e9604c0-d1bd-44cd-b098-79e787602dda:
     id: node_type
     bundles:
       event: event
     negate: false
     context_mapping:
       node: node
-    uuid: d41211cb-5b7d-48df-8c00-d8b40c88cfac
+    uuid: 9e9604c0-d1bd-44cd-b098-79e787602dda
 selection_logic: and
 weight: -5
 relationships: {  }

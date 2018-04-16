@@ -23,6 +23,7 @@ content:
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
   field_logo:
     weight: 1
     settings:
@@ -30,11 +31,13 @@ content:
       preview_image_style: thumbnail
     third_party_settings: {  }
     type: image_image
+    region: content
   field_start_date:
     weight: 3
     settings: {  }
     third_party_settings: {  }
     type: datetime_default
+    region: content
   field_website:
     weight: 2
     settings:
@@ -42,11 +45,13 @@ content:
       placeholder_title: ''
     third_party_settings: {  }
     type: link_default
+    region: content
   langcode:
     type: language_select
     weight: 5
     settings: {  }
     third_party_settings: {  }
+    region: content
   name:
     type: string_textfield
     weight: 0
@@ -54,6 +59,7 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
   user_id:
     type: entity_reference_autocomplete
     weight: 6
@@ -62,4 +68,5 @@ content:
       size: 60
       placeholder: ''
     third_party_settings: {  }
+    region: content
 hidden: {  }
