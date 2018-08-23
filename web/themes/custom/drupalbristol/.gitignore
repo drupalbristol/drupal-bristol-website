@@ -2,3 +2,5 @@ build/
 node_modules/
 vendor/
 *.map
+hot
+mix-manifest.json

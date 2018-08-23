@@ -1,18 +1,17 @@
 {
+  "private": true,
   "scripts": {
-    "build": "encore production",
-    "dev": "encore dev",
-    "watch": "encore dev --watch"
+    "dev": "NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "NODE_ENV=development node_modules/webpack/bin/webpack.js --watch --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "hot": "NODE_ENV=development webpack-dev-server --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "production": "NODE_ENV=production node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "devDependencies": {
-    "@symfony/webpack-encore": "^0.17.1",
-    "autoprefixer": "^7.2.4",
     "font-awesome": "^4.7.0",
-    "glob-all": "^3.1.0",
-    "less": "^2.7.3",
-    "less-loader": "^4.0.5",
-    "less-plugin-npm-import": "^2.1.0",
-    "postcss-loader": "^2.0.10",
-    "tailwindcss": "^0.4.0"
+    "laravel-mix": "^2.1.14",
+    "laravel-mix-tailwind": "^0.1.0",
+    "less": "^3.8.1",
+    "less-loader": "^4.1.0",
+    "tailwindcss": "^0.6.5"
   }
 }
