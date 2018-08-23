@@ -26,9 +26,9 @@
     <h3>{{ title }}</h3>
   {% endif %}
 
-  <{{ list.type }} class="tw-flex tw-flex-wrap">
+  <{{ list.type }} class="tw-flex tw-flex-wrap tw--mx-3">
     {% for row in rows %}
-      <li{{ row.attributes.addClass('tw-w-1/3 md:tw-w-1/4 lg:tw-w-1/5 xl:tw-w-1/8 tw-p-0 tw-m-0 tw-text-center') }}>
+      <li{{ row.attributes.addClass('tw-w-1/3 md:tw-w-1/4 lg:tw-w-1/5 xl:tw-w-1/8 tw-p-0 tw-m-0 tw-text-center tw-flex tw-px-3') }}>
         {{ row.content }}
       </li>
     {% endfor %}
