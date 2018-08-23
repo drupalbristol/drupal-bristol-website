@@ -1,18 +1,16 @@
-@screen md {
-  .view-speakers .node .field--type-image {
-    @apply .tw-border-4 .tw-border-solid .tw-border-white .tw-m-0 .tw-mb-1 .tw-overflow-hidden .tw-p-0 .tw-relative .tw-rounded-full .tw-w-16 .tw-z-10;
-    transition: box-shadow 0.25s ease-in-out;
+.view-speakers .node .field--type-image {
+  @apply .tw-border-4 .tw-border-solid .tw-border-white .tw-m-0 .tw-mb-1 .tw-overflow-hidden .tw-p-0 .tw-relative .tw-rounded-full .tw-w-16 .tw-z-10;
+  transition: box-shadow 0.25s ease-in-out;
+
+  img {
+    @apply .tw-block .tw-rounded-full;
+  }
+
+  &:hover {
+    @apply .tw-shadow-center;
 
     img {
-      @apply .tw-block .tw-rounded-full;
-    }
-
-    &:hover {
-      @apply .tw-shadow-center;
-
-      img {
-        transform: scale(1.1);
-      }
+      transform: scale(1.1);
     }
   }
 }
